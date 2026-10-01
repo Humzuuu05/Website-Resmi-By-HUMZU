@@ -1,0 +1,6 @@
+<svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" width="200" height="200" aria-label="Logo Pasar Induk Cipinang">
+  <circle cx="22" cy="22" r="21" fill="#1A365D" fill-opacity="0.07" stroke="#1A365D" stroke-opacity="0.12" stroke-width="1" />
+  <path d="M15 16V32H18V20H26V32H29V16H15Z" fill="#1A365D" />
+  <path d="M12 15L22 9L32 15H12Z" fill="#D49B00" />
+  <path d="M9 31C8 25 9 18 12 14M35 31C36 25 35 18 32 14" stroke="#D49B00" stroke-width="2.4" stroke-linecap="round" />
+</svg>

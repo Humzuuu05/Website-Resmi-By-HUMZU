@@ -1,0 +1,6 @@
+<svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" width="200" height="200" aria-label="Logo Badan Gizi Nasional">
+  <circle cx="22" cy="22" r="21" fill="#0D3823" fill-opacity="0.07" stroke="#0D3823" stroke-opacity="0.12" stroke-width="1" />
+  <circle cx="22" cy="22" r="19" stroke="#D4A017" stroke-width="2" fill="none" stroke-dasharray="4 2" />
+  <path d="M22 7L33 12.5V23C33 30 22 36 22 36C22 36 11 30 11 23V12.5L22 7Z" fill="#0D3823" />
+  <path d="M22 12L24 17.5H29.5L25 21L26.8 26.5L22 23L17.2 26.5L19 21L14.5 17.5H20L22 12Z" fill="#F5D061" />
+</svg>

@@ -1,0 +1,5 @@
+test_*
+verify_*
+.env
+.env.*
+node_modules/

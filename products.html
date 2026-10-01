@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Produk & Produk Sampingan - Ragam Beras Berkualitas & Hasil Samping | PT Pangan Masa Depan</title>
+  <meta name="description" content="Katalog lengkap beras berkualitas tinggi dan produk sampingan industri (broken rice, menir, reject, pelet sekam, bekatul) dari PT Pangan Masa Depan Indramayu." />
+  <link rel="icon" href="assets/images/logo-pmd-icon.png" type="image/png" />
+
+  <!-- Google Fonts Preconnect & Stylesheets -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main Stylesheets -->
+  <link rel="stylesheet" href="css/style.css?v=20260918_v53" />
+  <link rel="stylesheet" href="css/responsive.css?v=20260918_v27" />
+
+  <style>
+    /* In-line header override to bypass any browser cache */
+    .site-header.solid-header {
+      position: sticky !important;
+      top: 0 !important;
+      left: 0 !important;
+      width: 100% !important;
+      height: 74px !important;
+      background: linear-gradient(180deg, rgba(78, 50, 35, 0.98) 0%, rgba(66, 42, 29, 0.97) 100%) !important;
+      backdrop-filter: blur(16px) !important;
+      -webkit-backdrop-filter: blur(16px) !important;
+      border-bottom: 1px solid rgba(197, 160, 89, 0.35) !important;
+      box-shadow: 0 10px 30px rgba(40, 22, 14, 0.30) !important;
+      z-index: 1000 !important;
+    }
+    .site-header.solid-header .header-logo {
+      filter: none !important;
+      opacity: 1 !important;
+    }
+    .site-header.solid-header .nav-link {
+      color: #F8F5EE !important;
+    }
+    .site-header.solid-header .nav-link:hover {
+      color: var(--color-gold-light, #E5CF98) !important;
+    }
+    .site-header.solid-header .nav-link.active {
+      color: #FFFFFF !important;
+      font-weight: 500 !important;
+    }
+    .site-header.solid-header .nav-link.active::after {
+      width: 100% !important;
+      background: var(--color-gold-gradient, linear-gradient(135deg, #E6CF97 0%, #C5A059 50%, #9B7830 100%)) !important;
+    }
+  </style>
+
+  <!-- Kemasan Pouch di Katalog -->
+  <style id="catalogPouchStyles">
+    .pouch-view-container {
+      display: inline-flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      border-radius: 18px !important;
+      padding: 10px 8px 12px !important;
+      outline: none !important;
+      cursor: default !important;
+    }
+    .pouch-image-wrapper {
+      position: relative !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      padding: 6px !important;
+    }
+    .catalog-pouch-img {
+      max-width: 100% !important;
+      max-height: 290px !important;
+      object-fit: contain !important;
+      filter: drop-shadow(0 10px 22px rgba(35, 27, 21, 0.16)) !important;
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), filter 0.35s ease !important;
+    }
+    .pouch-view-container:hover .catalog-pouch-img {
+      transform: translateY(-4px) !important;
+      filter: drop-shadow(0 14px 28px rgba(35, 27, 21, 0.22)) !important;
+    }
+  </style>
+</head>
+<body class="catalog-body">
+
+  <!-- ========================================================================
+       SOLID SITE HEADER ALA JATILUWIH ORGANIK (ACTIVE UNDERLINE ON PRODUK KAMI)
+       ======================================================================== -->
+  <header class="site-header solid-header" id="siteHeader">
+    <div class="header-container">
+      <!-- Logo Kiri -->
+      <div class="header-brand">
+        <a href="index.html#hero" aria-label="Beranda PT Pangan Masa Depan">
+          <img src="assets/images/logo-pmd-light.png?v=3" alt="PT Pangan Masa Depan (PMD) Logo" class="header-logo logo-light" style="display: block;" />
+        </a>
+      </div>
+
+      <!-- Navigasi Kanan -->
+      <nav class="nav-wrapper">
+        <ul class="nav-group">
+          <li><a href="index.html#about" class="nav-link">Tentang Kami</a></li>
+          <li><a href="products.html" class="nav-link active">Produk</a></li>
+          <li><a href="career.html" class="nav-link">Karir</a></li>
+          <li><a href="index.html#contact" class="nav-link">Hubungi Kami</a></li>
+        </ul>
+      </nav>
+
+      <!-- Tombol Menu Seluler -->
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Buka Menu Navigasi" style="color: #FFFFFF;">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Drawer Menu Seluler -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Menu Seluler">
+    <div>
+      <button class="drawer-close" id="drawerClose" aria-label="Tutup Menu">
+        <i class="fas fa-times"></i>
+      </button>
+      <div style="margin-bottom: 28px;">
+        <img src="assets/images/logo-pmd-dark.png" alt="PT Pangan Masa Depan (PMD)" style="height: 32px; width: auto;" />
+      </div>
+      <ul class="drawer-nav">
+        <li><a href="index.html#hero" class="drawer-link">Beranda</a></li>
+        <li><a href="index.html#about" class="drawer-link">Tentang Kami</a></li>
+        <li><a href="products.html" class="drawer-link" style="color: var(--color-gold-deep); font-weight: 700;">Produk</a></li>
+        <li><a href="career.html" class="drawer-link">Karir</a></li>
+        <li><a href="index.html#contact" class="drawer-link">Hubungi Kami</a></li>
+      </ul>
+    </div>
+    <div style="font-size: 0.85rem; color: var(--text-muted); border-top: 1px solid var(--border-subtle); padding-top: 20px;">
+      <p><strong>Hotline:</strong> +62 811-3880-0034</p>
+      <p>PT Pangan Masa Depan - Indramayu</p>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       BANNER INTRO SECTION
+       ======================================================================== -->
+  <section class="catalog-banner-section">
+    <!-- Ornamen Seni Batik Sulur Padi Nusantara (Sudut Kanan Atas & Kiri Atas) -->
+    <div class="products-batik-motif-top-right" aria-hidden="true">
+      <img src="assets/images/batik-sulur-sweeping.png?v=11" alt="" class="products-batik-img" />
+    </div>
+    <div class="products-batik-motif-top-left" aria-hidden="true">
+      <img src="assets/images/batik-padi-lineart-middle-left.png?v=5" alt="" class="products-batik-img" />
+    </div>
+
+    <div class="catalog-container text-center">
+      <span class="section-tag">- 10 Ragam Pilihan Beras Berkualitas -</span>
+      <h1 class="section-title" style="letter-spacing: 0.04em; margin-bottom: 0;">PRODUK</h1>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       KATALOG PRODUK ROW-BY-ROW (PERSIS FORMAT JATILUWIH ORGANIK)
+       ======================================================================== -->
+  <main class="catalog-products-list">
+    <!-- Ornamen Seni Batik Sulur Padi Nusantara (Sisi Tengah & Bawah Katalog Produk) -->
+    <div class="products-batik-motif-mid-right" aria-hidden="true">
+      <img src="assets/images/batik-padi-struktur-baru.png?v=7" alt="" class="products-batik-img" />
+    </div>
+    <div class="products-batik-motif-mid-left" aria-hidden="true">
+      <img src="assets/images/batik-padi-struktur-kiri.png?v=2" alt="" class="products-batik-img" />
+    </div>
+    <div class="products-batik-motif-bottom-left" aria-hidden="true">
+      <img src="assets/images/batik-padi-corner-left.png?v=8" alt="" class="products-batik-img" />
+    </div>
+    <div class="products-batik-motif-bottom-right" aria-hidden="true">
+      <img src="assets/images/batik-padi-corner-right.png?v=8" alt="" class="products-batik-img" />
+    </div>
+
+    <div class="catalog-container">
+<!-- 1. BERAS CRUISE -->
+      <article class="catalog-item-row" id="prod-cruise">
+        <div class="catalog-pouch-column">
+          <div class="pouch-view-container">
+            <div class="pouch-image-wrapper">
+              <img src="assets/images/mockups/pouch_cruise_front.png" 
+                   alt="Kemasan Beras Cruise 5 Kg - PT Pangan Masa Depan" 
+                   class="catalog-pouch-img" loading="lazy" />
+            </div>
+          </div>
+        </div>
+        <div class="catalog-info-column">
+          <h2 class="catalog-product-title">Beras Cruise</h2>
+          <span class="catalog-product-sub">Premium Quality Rice &bull; Kemasan 5 Kg</span>
+          <ul class="catalog-checklist">
+            <li><span class="check-mark">&bull;</span><span>Bulir putih bening utuh dengan derajat sosoh optimal 95%</span></li>
+            <li><span class="check-mark">&bull;</span><span>Tekstur nasi sangat pulen, wangi, dan lembut alami</span></li>
+            <li><span class="check-mark">&bull;</span><span>Bebas dari bahan pengawet, pewarna, &amp; pengharum sintetis</span></li>
+            <li><span class="check-mark">&bull;</span><span>Pilihan utama untuk sajian istimewa keluarga Indonesia</span></li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- 2. BERAS PAGI JAYA -->
+      <article class="catalog-item-row" id="prod-pagi-jaya">
+        <div class="catalog-pouch-column">
+          <div class="pouch-view-container">
+            <div class="pouch-image-wrapper">
+              <img src="assets/images/mockups/pouch_pagijaya_front.png" 
+                   alt="Kemasan Beras Pagi Jaya 5 Kg - PT Pangan Masa Depan" 
+                   class="catalog-pouch-img" loading="lazy" />
+            </div>
+          </div>
+        </div>
+        <div class="catalog-info-column">
+          <h2 class="catalog-product-title">Beras Pagi Jaya</h2>
+          <span class="catalog-product-sub">Beras Keluarga Berkualitas &bull; Kemasan 5 Kg</span>
+          <ul class="catalog-checklist">
+            <li><span class="check-mark">&bull;</span><span>Tekstur pulen nikmat khas selera keluarga nusantara</span></li>
+            <li><span class="check-mark">&bull;</span><span>Hasil tanak nasi banyak dan mengenyangkan lebih lama</span></li>
+            <li><span class="check-mark">&bull;</span><span>Tanpa pengawet, tanpa pewarna, dan tanpa pengharum buatan</span></li>
+            <li><span class="check-mark">&bull;</span><span>Pilihan ekonomis dengan jaminan mutu teruji dan konsisten</span></li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- 3. BINTANG MAHKOTA -->
+      <article class="catalog-item-row" id="prod-bintang-mahkota">
+        <div class="catalog-pouch-column">
+          <div class="pouch-view-container">
+            <div class="pouch-image-wrapper">
+              <img src="assets/images/mockups/pouch_bintangmahkota_front.png" 
+                   alt="Kemasan Beras Bintang Mahkota 5 Kg - PT Pangan Masa Depan" 
+                   class="catalog-pouch-img" loading="lazy" />
+            </div>
+          </div>
+        </div>
+        <div class="catalog-info-column">
+          <h2 class="catalog-product-title">Bintang Mahkota</h2>
+          <span class="catalog-product-sub">Beras Premium Pulen Harum &bull; Kemasan 5 Kg</span>
+          <ul class="catalog-checklist">
+            <li><span class="check-mark">&bull;</span><span>Bersih, pulen, dan harum alami dari bulir padi pilihan</span></li>
+            <li><span class="check-mark">&bull;</span><span>Derajat sosoh prima 95% dengan butir patah minimal 15%</span></li>
+            <li><span class="check-mark">&bull;</span><span>Tanpa pengawet, tanpa pewangi, dan tanpa pewarna sintetis</span></li>
+            <li><span class="check-mark">&bull;</span><span>Sangat nikmat disantap hangat bersama hidangan keluarga</span></li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- 4. BERAS BPJ (NAGA BINTANG MAHKOTA) -->
+      <article class="catalog-item-row" id="prod-bpj">
+        <div class="catalog-pouch-column">
+          <div class="pouch-view-container">
+            <div class="pouch-image-wrapper">
+              <img src="assets/images/mockups/pouch_bpj_front.png" 
+                   alt="Kemasan Beras BPJ Naga Bintang Mahkota 5 Kg - PT Pangan Masa Depan" 
+                   class="catalog-pouch-img" loading="lazy" />
+            </div>
+          </div>
+        </div>
+        <div class="catalog-info-column">
+          <h2 class="catalog-product-title">Beras BPJ (Naga Bintang Mahkota)</h2>
+          <span class="catalog-product-sub">Beras Mutu Premium &bull; Kemasan 5 Kg</span>
+          <ul class="catalog-checklist">
+            <li><span class="check-mark">&bull;</span><span>Nasi mengembang banyak dan mekar sempurna saat ditanak</span></li>
+            <li><span class="check-mark">&bull;</span><span>Tekstur pulen pas, sangat cocok untuk keluarga &amp; usaha kuliner</span></li>
+            <li><span class="check-mark">&bull;</span><span>Bebas bahan kimia pemutih, pewarna, dan pengharum</span></li>
+            <li><span class="check-mark">&bull;</span><span>Kualitas konsisten berstandar SNI beras premium</span></li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- 5. MACAN MANIS CANTIK (PANDAN WANGI) -->
+      <article class="catalog-item-row" id="prod-macan-pandan">
+        <div class="catalog-pouch-column">
+          <div class="pouch-view-container">
+            <div class="pouch-image-wrapper">
+              <img src="assets/images/mockups/pouch_macan_front.png" 
+                   alt="Kemasan Beras Macan Manis Cantik 5 Kg - PT Pangan Masa Depan" 
+                   class="catalog-pouch-img" loading="lazy" />
+            </div>
+          </div>
+        </div>
+        <div class="catalog-info-column">
+          <h2 class="catalog-product-title">Macan Manis Cantik</h2>
+          <span class="catalog-product-sub">Beras Pandan Wangi (Fragrant Pandan Rice) &bull; Kemasan 5 Kg</span>
+          <ul class="catalog-checklist">
+            <li><span class="check-mark">&bull;</span><span>Aroma wangi pandan murni semerbak saat nasi ditanak</span></li>
+            <li><span class="check-mark">&bull;</span><span>Bulir bulat lonjong bening khas varietas pandan wangi asli</span></li>
+            <li><span class="check-mark">&bull;</span><span>Tekstur pulen legit istimewa dan lembut di lidah</span></li>
+            <li><span class="check-mark">&bull;</span><span>100% alami tanpa penambahan esens sintetis atau pewangi buatan</span></li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- 6. BERAS DONGA KYAI -->
+      <article class="catalog-item-row" id="prod-donga-kyai">
+        <div class="catalog-pouch-column">
+          <div class="pouch-view-container">
+            <div class="pouch-image-wrapper">
+              <img src="assets/images/mockups/pouch_dongakyai_front.png" 
+                   alt="Kemasan Beras Donga Kyai 5 Kg - PT Pangan Masa Depan" 
+                   class="catalog-pouch-img" loading="lazy" />
+            </div>
+          </div>
+        </div>
+        <div class="catalog-info-column">
+          <h2 class="catalog-product-title">Beras Donga Kyai</h2>
+          <span class="catalog-product-sub">Long Grain Rice Premium &bull; Kemasan 5 Kg</span>
+          <ul class="catalog-checklist">
+            <li><span class="check-mark">&bull;</span><span>Bulir panjang ramping, utuh dan bersih murni berkilau</span></li>
+            <li><span class="check-mark">&bull;</span><span>Tekstur pulen harum, tidak mudah benyek saat dimasak</span></li>
+            <li><span class="check-mark">&bull;</span><span>Tanpa pengawet, tanpa pewangi, dan tanpa pewarna kimiawi</span></li>
+            <li><span class="check-mark">&bull;</span><span>Sangat cocok untuk sajian kebuli, briyani, maupun nasi putih harian</span></li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- 7. SULTAN BERAS -->
+      <article class="catalog-item-row" id="prod-sultan-beras">
+        <div class="catalog-pouch-column">
+          <div class="pouch-view-container">
+            <div class="pouch-image-wrapper">
+              <img src="assets/images/mockups/pouch_sultanberas_front.png" 
+                   alt="Kemasan Sultan Beras 5 Kg - PT Pangan Masa Depan" 
+                   class="catalog-pouch-img" loading="lazy" />
+            </div>
+          </div>
+        </div>
+        <div class="catalog-info-column">
+          <h2 class="catalog-product-title">Sultan Beras</h2>
+          <span class="catalog-product-sub">Beras Super Berasnya Sultan &bull; Kemasan 5 Kg</span>
+          <ul class="catalog-checklist">
+            <li><span class="check-mark">&bull;</span><span>Bulir jernih utuh dengan derajat sosoh prima 95%</span></li>
+            <li><span class="check-mark">&bull;</span><span>Rasa nasi gurih pulen istimewa yang memanjakan lidah</span></li>
+            <li><span class="check-mark">&bull;</span><span>Bebas dari bahan pengawet, pewarna, dan pengharum sintetis</span></li>
+            <li><span class="check-mark">&bull;</span><span>Diolah di fasilitas pabrik modern berpresisi tinggi (PMD)</span></li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- 8. BERAS NICK WELL -->
+      <article class="catalog-item-row" id="prod-nickwell">
+        <div class="catalog-pouch-column">
+          <div class="pouch-view-container">
+            <div class="pouch-image-wrapper">
+              <img src="assets/images/mockups/pouch_nickwell_front.png?v=rice" 
+                   alt="Kemasan Beras Nick Well 5 Kg - PT Pangan Masa Depan" 
+                   class="catalog-pouch-img" loading="lazy" />
+            </div>
+          </div>
+        </div>
+        <div class="catalog-info-column">
+          <h2 class="catalog-product-title">Beras Nick Well</h2>
+          <span class="catalog-product-sub">Selected Quality Rice &bull; Kemasan 5 Kg Netto</span>
+          <ul class="catalog-checklist">
+            <li><span class="check-mark">&bull;</span><span>Bulir beras teratur, bersih, dan bebas debu bekatul</span></li>
+            <li><span class="check-mark">&bull;</span><span>Tekstur pulen mantap dan tidak lengket berlebihan</span></li>
+            <li><span class="check-mark">&bull;</span><span>Aroma nasi harum segar alami tanpa zat kimia tambahan</span></li>
+            <li><span class="check-mark">&bull;</span><span>100% Guaranteed Quality dengan jaminan mutu teruji</span></li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- 9. BERAS MAMAKU -->
+      <article class="catalog-item-row" id="prod-mamaku">
+        <div class="catalog-pouch-column">
+          <div class="pouch-view-container">
+            <div class="pouch-image-wrapper">
+              <img src="assets/images/mockups/pouch_mamaku_front.png" 
+                   alt="Kemasan Beras Mamaku 5 Kg - PT Pangan Masa Depan" 
+                   class="catalog-pouch-img" loading="lazy" />
+            </div>
+          </div>
+        </div>
+        <div class="catalog-info-column">
+          <h2 class="catalog-product-title">Beras Mamaku</h2>
+          <span class="catalog-product-sub">100% Bulir Pilihan Keluarga &bull; Kemasan 5 Kg</span>
+          <ul class="catalog-checklist">
+            <li><span class="check-mark">&bull;</span><span>100% bulir pilihan dengan tekstur bersih, pulen, dan harum</span></li>
+            <li><span class="check-mark">&bull;</span><span>Nasi tetap lembut dan empuk meski disimpan hingga malam hari</span></li>
+            <li><span class="check-mark">&bull;</span><span>Tanpa pengawet, pewangi, dan pewarna sintetis</span></li>
+            <li><span class="check-mark">&bull;</span><span>Sangat pas untuk bekal sekolah dan santapan keluarga sehari-hari</span></li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- 10. BERAS WA LEMU -->
+      <article class="catalog-item-row" id="prod-walemu">
+        <div class="catalog-pouch-column">
+          <div class="pouch-view-container">
+            <div class="pouch-image-wrapper">
+              <img src="assets/images/mockups/pouch_walemu_front.png" 
+                   alt="Kemasan Beras Wa Lemu 5 Kg - PT Pangan Masa Depan" 
+                   class="catalog-pouch-img" loading="lazy" />
+            </div>
+          </div>
+        </div>
+        <div class="catalog-info-column">
+          <h2 class="catalog-product-title">Beras Wa Lemu</h2>
+          <span class="catalog-product-sub">Beras Mutu Super Rasa Gurih &bull; Kemasan 5 Kg</span>
+          <ul class="catalog-checklist">
+            <li><span class="check-mark">&bull;</span><span>Kadar patahan (broken) sangat rendah dan seragam (maks 15%)</span></li>
+            <li><span class="check-mark">&bull;</span><span>Tekstur empuk, pulen gurih, dan mengembang sempurna</span></li>
+            <li><span class="check-mark">&bull;</span><span>Higienis dengan proses seleksi bulir otomatis berstandar modern</span></li>
+            <li><span class="check-mark">&bull;</span><span>Tidak mudah basi atau berair saat disimpan di rice cooker</span></li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <!-- ========================================================================
+       KATALOG PRODUK SAMPINGAN & EKOSISTEM ZERO WASTE (PIE CHART DESIGN)
+       ======================================================================== -->
+  <section class="catalog-banner-section byproducts-section-banner" id="produk-sampingan">
+    <div class="catalog-container text-center">
+      <span class="section-tag">- 100% Efisiensi Sirkular &amp; Presisi Pengolahan -</span>
+      <h2 class="section-title" style="letter-spacing: 0.04em; margin-bottom: 8px;">PRODUK SAMPINGAN</h2>
+      <p style="color: #6D5B4F; font-size: 0.98rem; max-width: 720px; margin: 0 auto;">
+        Visualisasi ekosistem terpadu hasil penggilingan padi modern PT Pangan Masa Depan: setiap gram bahan baku diolah bernilai guna tinggi tanpa limbah.
+      </p>
+    </div>
+  </section>
+
+  <section class="zero-waste-section">
+    <!-- Ornamen Seni Batik Sulur Padi Nusantara (Sudut Kanan Atas & Kiri Bawah Ekosistem Zero Waste) -->
+    <div class="zero-waste-batik-motif-top-right" aria-hidden="true">
+      <img src="assets/images/batik-sulur-sweeping.png?v=11" alt="" class="products-batik-img" />
+    </div>
+    <div class="zero-waste-batik-motif-bottom-left" aria-hidden="true">
+      <img src="assets/images/batik-padi-corner-left.png?v=8" alt="" class="products-batik-img" />
+    </div>
+
+    <div class="zero-waste-container">
+
+      <!-- 2. INTERACTIVE PIE CHART SHOWCASE (Foto di dalam lingkaran, penjelasan disampingnya) -->
+      <div class="pie-chart-showcase">
+        <!-- Kolom Kiri: Segmented Pie Chart dengan Foto Produk di Dalam Lingkaran -->
+        <div class="donut-chart-wrapper">
+          <div class="pie-svg-container">
+            <svg viewBox="0 0 400 400" class="pie-svg" id="zeroWastePie" role="img" aria-label="Diagram Pie Distribusi Produk Sampingan Penggilingan Padi 5 Kategori Seimbang">
+              <defs>
+                <pattern id="pat-pelet-sekam" patternUnits="userSpaceOnUse" x="195" y="15" width="185" height="190">
+                  <image href="assets/images/produk-pelet-sekam.jpg?v=20260918_pelet" x="0" y="0" width="185" height="190" preserveAspectRatio="xMidYMid slice" />
+                </pattern>
+                <pattern id="pat-bekatul" patternUnits="userSpaceOnUse" x="195" y="140" width="195" height="205">
+                  <image href="assets/images/produk-bekatul.jpg?v=20260918_bekatul" x="0" y="0" width="195" height="205" preserveAspectRatio="xMidYMid slice" />
+                </pattern>
+                <pattern id="pat-beras-broken" patternUnits="userSpaceOnUse" x="90" y="195" width="220" height="195">
+                  <image href="assets/images/produk-beras-patah.jpg" x="0" y="0" width="220" height="195" preserveAspectRatio="xMidYMid slice" />
+                </pattern>
+                <pattern id="pat-menir-beras" patternUnits="userSpaceOnUse" x="15" y="145" width="195" height="205">
+                  <image href="assets/images/produk-menir.jpg" x="0" y="0" width="195" height="205" preserveAspectRatio="xMidYMid slice" />
+                </pattern>
+                <pattern id="pat-reject" patternUnits="userSpaceOnUse" x="25" y="15" width="185" height="190">
+                  <image href="assets/images/produk-offgrade.jpg" x="0" y="0" width="185" height="190" preserveAspectRatio="xMidYMid slice" />
+                </pattern>
+              </defs>
+
+              <!-- Slice 1: Pelet Sekam (1/5 Bagian / 72°) -->
+              <g class="pie-slice-group active-slice" id="slice-pelet-sekam" data-id="pelet-sekam" style="--pop-x: 9px; --pop-y: -13px;">
+                <title>Pelet Sekam (Rice Husk Pellet - 20%)</title>
+                <path class="pie-slice-photo" d="M 202.65 196.36 L 202.65 21.36 A 175 175 0 0 1 369.08 142.28 Z" fill="url(#pat-pelet-sekam)" />
+                <path class="pie-slice-tint" d="M 202.65 196.36 L 202.65 21.36 A 175 175 0 0 1 369.08 142.28 Z" fill="none" stroke="#8D5B4C" stroke-width="2.5" />
+              </g>
+
+              <!-- Slice 2: Bekatul Halus (1/5 Bagian / 72°) -->
+              <g class="pie-slice-group" id="slice-bekatul" data-id="bekatul" style="--pop-x: 15px; --pop-y: 5px;">
+                <title>Bekatul Halus (Rice Bran - 8%)</title>
+                <path class="pie-slice-photo" d="M 204.28 201.39 L 370.71 147.31 A 175 175 0 0 1 307.14 342.97 Z" fill="url(#pat-bekatul)" />
+                <path class="pie-slice-tint" d="M 204.28 201.39 L 370.71 147.31 A 175 175 0 0 1 307.14 342.97 Z" fill="none" stroke="#B38B59" stroke-width="2.5" />
+              </g>
+
+              <!-- Slice 3: Beras Broken (1/5 Bagian / 72°) -->
+              <g class="pie-slice-group" id="slice-beras-broken" data-id="beras-broken" style="--pop-x: 0px; --pop-y: 16px;">
+                <title>Beras Broken (Patah Super - 4%)</title>
+                <path class="pie-slice-photo" d="M 200.00 204.50 L 302.86 346.08 A 175 175 0 0 1 97.14 346.08 Z" fill="url(#pat-beras-broken)" />
+                <path class="pie-slice-tint" d="M 200.00 204.50 L 302.86 346.08 A 175 175 0 0 1 97.14 346.08 Z" fill="none" stroke="#D9C5B2" stroke-width="2.5" />
+              </g>
+
+              <!-- Slice 4: Menir Beras (1/5 Bagian / 72°) -->
+              <g class="pie-slice-group" id="slice-menir-beras" data-id="menir-beras" style="--pop-x: -15px; --pop-y: 5px;">
+                <title>Menir Beras (Rice Grits - 2%)</title>
+                <path class="pie-slice-photo" d="M 195.72 201.39 L 92.86 342.97 A 175 175 0 0 1 29.29 147.31 Z" fill="url(#pat-menir-beras)" />
+                <path class="pie-slice-tint" d="M 195.72 201.39 L 92.86 342.97 A 175 175 0 0 1 29.29 147.31 Z" fill="none" stroke="#E5B26E" stroke-width="2.5" />
+              </g>
+
+              <!-- Slice 5: Reject Sorter (1/5 Bagian / 72°) -->
+              <g class="pie-slice-group" id="slice-reject" data-id="reject" style="--pop-x: -9px; --pop-y: -13px;">
+                <title>Reject Color Sorter (1%)</title>
+                <path class="pie-slice-photo" d="M 197.35 196.36 L 30.92 142.28 A 175 175 0 0 1 197.35 21.36 Z" fill="url(#pat-reject)" />
+                <path class="pie-slice-tint" d="M 197.35 196.36 L 30.92 142.28 A 175 175 0 0 1 197.35 21.36 Z" fill="none" stroke="#7F9172" stroke-width="2.5" />
+              </g>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Kolom Kanan: Penjelasan Disampingnya (Murni Teks Spesifikasi Elegan) -->
+        <div class="pie-detail-card" id="pieDetailPanel">
+          <div class="pie-detail-header">
+            <div class="pie-detail-meta">
+              <span class="pie-detail-tag" id="detailTag">Biomassa &amp; Energi Terbarukan</span>
+              <span class="pie-detail-yield" id="detailYield">&bull; Hasil Olah: 20% Bobot Gabah (Biomassa Industri)</span>
+            </div>
+            <h3 id="detailTitle">Pelet Sekam (Rice Husk Pellet)</h3>
+          </div>
+          <p class="pie-detail-desc" id="detailDesc">
+            Kulit gabah padi kering yang dipadatkan dengan mesin pelletizer bertekanan tinggi menjadi bahan bakar biomassa padat berkalori tinggi pengganti batubara.
+          </p>
+          <ul class="pie-detail-specs" id="detailSpecs">
+            <li><i class="fas fa-check-circle"></i> <span>Energi biomassa ramah lingkungan pengganti batubara &amp; kayu bakar.</span></li>
+            <li><i class="fas fa-check-circle"></i> <span>Kerapatan tinggi, mudah disimpan, dan hemat biaya transportasi logistik.</span></li>
+            <li><i class="fas fa-check-circle"></i> <span>Kadar abu rendah, pembakaran stabil &amp; efisien untuk boiler industri.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Zoom Modal untuk Foto Produk Pie Chart (Full Gambar Saja, Sudut 0, Tanpa Tombol X) -->
+  <div class="pie-lightbox-modal" id="pieLightboxModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="pie-lightbox-backdrop" id="pieLightboxBackdrop"></div>
+    <div class="pie-lightbox-box">
+      <div class="pie-lightbox-image-wrap">
+        <img src="assets/images/produk-pelet-sekam.jpg?v=20260918_pelet" alt="Foto Produk Sampingan" id="pieLightboxImg" />
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       CTA SECTION
+       ======================================================================== -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-box">
+        <h2 class="cta-title">Siap Bermitra atau Memesan Produk Berkualitas?</h2>
+        <p class="cta-desc">
+          Hubungi tim pemasaran PT Pangan Masa Depan untuk konsultasi spesifikasi beras, produk sampingan industri, harga grosir, maupun kebutuhan kemasan khusus untuk ritel dan industri Anda.
+        </p>
+        <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+          <a href="https://wa.me/6281138800034?text=Halo%20PT%20Pangan%20Masa%20Depan,%20saya%20ingin%20konsultasi%20pemesanan%20produk%20dan%20kerjasama." target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 14px 34px; font-size: 1rem;">
+            <i class="fab fa-whatsapp"></i> Hubungi WhatsApp (+62 811-3880-0034)
+          </a>
+          <a href="index.html#contact" class="btn btn-ghost" style="padding: 14px 34px; font-size: 1rem;">
+            Kirim Formulir Kontak
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Info Brand -->
+        <div class="footer-brand">
+          <img src="assets/images/logo-pmd-light.png?v=2" alt="PT Pangan Masa Depan (PMD)" class="footer-logo" />
+          <p>
+            Industri pengolahan pangan modern dan fasilitas penggilingan presisi di Kandanghaur, Indramayu. Menghadirkan ragam produk beras dan ketan berkualitas tinggi dengan standar mutu terpercaya.
+          </p>
+          <div class="social-links">
+            <a href="https://wa.me/6281138800034" target="_blank" rel="noopener" class="social-btn" aria-label="WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="mailto:info@panganmasadepan.com" class="social-btn" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Menu Cepat -->
+        <div class="footer-col">
+          <h4>Tautan Cepat</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#hero">Beranda</a></li>
+            <li><a href="products.html">Produk</a></li>
+            <li><a href="#produk-sampingan">Produk Sampingan</a></li>
+            <li><a href="index.html#about">Tentang Kami</a></li>
+            <li><a href="career.html">Karir</a></li>
+            <li><a href="index.html#contact">Hubungi Kami</a></li>
+          </ul>
+        </div>
+
+        <!-- Kontak & Kantor Pusat -->
+        <div class="footer-col">
+          <h4>Kantor Pusat & Kontak</h4>
+          <ul class="footer-links">
+            <li><i class="fas fa-map-marker-alt" style="margin-right: 8px; color: var(--color-warm-amber);"></i> Jalan Rancahan, Blok Sukamelang RT 08/04, Karangmulya, Kec. Kandanghaur, Kabupaten Indramayu, Jawa Barat 45254</li>
+            <li><i class="fas fa-phone-alt" style="margin-right: 8px; color: var(--color-warm-amber);"></i> +62 811-3880-0034</li>
+            <li><i class="fas fa-envelope" style="margin-right: 8px; color: var(--color-warm-amber);"></i> info@panganmasadepan.com</li>
+            <li><i class="fas fa-clock" style="margin-right: 8px; color: var(--color-warm-amber);"></i> 08.00 - 17.00 WIB</li>
+          </ul>
+        </div>
+
+        <!-- Peta Google Maps (Paling Kanan & Ukuran Lebih Besar) -->
+        <div class="footer-col footer-map-col">
+          <div class="footer-map-wrapper">
+            <iframe 
+              src="https://maps.google.com/maps?q=PT%20Pangan%20Masa%20Depan,%20Jalan%20Rancahan,%20Karangmulya,%20Kandanghaur,%20Kabupaten%20Indramayu,%20Jawa%20Barat&t=&z=14&ie=UTF8&iwloc=&output=embed" 
+              width="100%" 
+              height="220" 
+              style="border:0; border-radius: 12px; display: block;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Peta Lokasi Pabrik PT Pangan Masa Depan">
+            </iframe>
+            <a href="https://www.google.com/maps/search/?api=1&query=PT+Pangan+Masa+Depan+Kandanghaur+Indramayu" target="_blank" rel="noopener noreferrer" class="footer-map-link">
+              <i class="fas fa-map-marked-alt"></i>
+              <span>Buka di Google Maps</span>
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bagian Bawah Footer -->
+      <div class="footer-bottom">
+        <div>
+          © 2026 <strong>PT Pangan Masa Depan</strong>. Hak Cipta Dilindungi Undang-Undang.
+        </div>
+        <div>
+          Kandanghaur, Indramayu • Fasilitas Pengolahan Beras Presisi
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Tombol WhatsApp Mengambang -->
+  <a href="https://wa.me/6281138800034?text=Halo%20PT%20Pangan%20Masa%20Depan,%20saya%20tertarik%20dengan%20produk%20beras%20dan%20kerjasama%20pasokan." target="_blank" rel="noopener noreferrer" class="floating-wa-btn" aria-label="Hubungi WhatsApp Customer Service">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Skrip Interaktif Drawer & Highlight -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Mobile Drawer Toggle
+      const mobileToggle = document.getElementById('mobileToggle');
+      const drawerClose = document.getElementById('drawerClose');
+      const mobileDrawer = document.getElementById('mobileDrawer');
+      const drawerOverlay = document.getElementById('drawerOverlay');
+
+      const openDrawer = () => {
+        if (mobileDrawer) mobileDrawer.classList.add('active');
+        if (drawerOverlay) drawerOverlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      };
+
+      const closeDrawer = () => {
+        if (mobileDrawer) mobileDrawer.classList.remove('active');
+        if (drawerOverlay) drawerOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+      };
+
+      if (mobileToggle) mobileToggle.addEventListener('click', openDrawer);
+      if (drawerClose) drawerClose.addEventListener('click', closeDrawer);
+      if (drawerOverlay) drawerOverlay.addEventListener('click', closeDrawer);
+
+      // Interactive Byproducts Pie Chart Controller (5 Kategori Seimbang)
+      const byproductData = {
+        'pelet-sekam': {
+          name: 'Pelet Sekam (Rice Husk Pellet)',
+          pct: '20%',
+          tag: 'Biomassa & Energi Terbarukan',
+          yield: '20% Bobot Gabah (Biomassa Industri)',
+          sub: 'Energi Hijau Boiler Industri',
+          img: 'assets/images/produk-pelet-sekam.jpg?v=20260918_pelet',
+          desc: 'Kulit gabah padi kering yang dipadatkan dengan mesin pelletizer bertekanan tinggi menjadi bahan bakar biomassa padat berkalori tinggi pengganti batubara.',
+          specs: [
+            'Energi biomassa ramah lingkungan pengganti batubara & kayu bakar.',
+            'Kerapatan tinggi, mudah disimpan, dan hemat biaya transportasi logistik.',
+            'Kadar abu rendah, pembakaran stabil & efisien untuk boiler industri.'
+          ],
+          waText: 'Halo PT Pangan Masa Depan, saya tertarik pasokan pelet sekam untuk energi boiler industri.'
+        },
+        'bekatul': {
+          name: 'Bekatul Halus (Rice Bran)',
+          pct: '8%',
+          tag: 'Nutrisi Konsentrat Ternak',
+          yield: '8% Bobot Gabah (Nutrisi Pakan Ternak)',
+          sub: 'Pakan Nutrisi Tinggi',
+          img: 'assets/images/produk-bekatul.jpg?v=20260918_bekatul',
+          desc: 'Lapisan kulit ari (aleurone layer) kaya serat pangan, protein nabati, dan vitamin B kompleks yang terkikis saat tahap penyosohan bertingkat.',
+          specs: [
+            'Bahan baku utama pakan konsentrat sapi perah, pedaging, & unggas.',
+            'Kaya zat nutrisi alami yang memacu pertumbuhan optimal ternak.',
+            'Kondisi segar murni, aroma khas bekatul baru, dan tidak berbau tengik.'
+          ],
+          waText: 'Halo PT Pangan Masa Depan, saya tertarik pasokan bekatul halus untuk pakan ternak.'
+        },
+        'beras-broken': {
+          name: 'Beras Broken (Patah Super)',
+          pct: '4%',
+          tag: 'Bahan Baku Industri Pangan',
+          yield: '4% Bobot Gabah (Bahan Industri Pangan)',
+          sub: 'Industri Bihun & Olahan',
+          img: 'assets/images/produk-beras-patah.jpg',
+          desc: 'Patahan butir beras bersih higienis hasil pemisahan mesin sortasi silinder sifter, kaya karbohidrat murni tanpa kotoran asing.',
+          specs: [
+            'Bahan baku utama industri bihun, bubur instan, mie beras, & kerupuk.',
+            'Bahan baku tepung beras halus berkualitas untuk industri pastry & bakery.',
+            'Kadar air terkontrol <14%, higienis dan aman disimpan jangka panjang.'
+          ],
+          waText: 'Halo PT Pangan Masa Depan, saya tertarik pasokan beras broken untuk industri makanan.'
+        },
+        'menir-beras': {
+          name: 'Menir Beras (Rice Grits)',
+          pct: '2%',
+          tag: 'Pakan Unggas & Fermentasi',
+          yield: '2% Bobot Gabah (Pakan Unggas & Fermentasi)',
+          sub: 'Pakan Unggas & Ragi',
+          img: 'assets/images/produk-menir.jpg',
+          desc: 'Pecahan mikro butir beras yang lolos ayakan halus, memiliki konsentrasi pati karbohidrat alami tinggi yang mudah dicerna.',
+          specs: [
+            'Pakan unggas, burung kicau, dan anak ayam berenergi tinggi.',
+            'Bahan baku fermentasi industri bio-etanol dan ragi makanan olahan.',
+            'Tekstur kering renyah, bersih dari debu, siap diproses tanpa perlakuan tambahan.'
+          ],
+          waText: 'Halo PT Pangan Masa Depan, saya tertarik pasokan menir beras untuk pakan / industri fermentasi.'
+        },
+        'reject': {
+          name: 'Reject Color Sorter',
+          pct: '1%',
+          tag: 'Tepung Industri & Pakan',
+          yield: '1% Bobot Gabah (Sortasi Kemurnian 95%+)',
+          sub: 'Pemisahan Sensor Optik',
+          img: 'assets/images/produk-offgrade.jpg',
+          desc: 'Bulir off-grade berkulit kapur atau berbintik warna yang dipisahkan secara akurat oleh jet angin mesin sensor optik berkecepatan tinggi.',
+          specs: [
+            'Bahan baku bernilai guna untuk formulasi tepung industri non-konsumsi.',
+            'Campuran konsentrat pakan ternak ekonomis berenergi karbohidrat.',
+            'Menjamin kemurnian 95%+ pada beras premium utama PT Pangan Masa Depan.'
+          ],
+          waText: 'Halo PT Pangan Masa Depan, saya tertarik pasokan beras reject color sorter untuk industri.'
+        }
+      };
+
+      let currentByproductId = 'pelet-sekam';
+
+      function selectByproduct(id) {
+        currentByproductId = id;
+        const data = byproductData[id];
+        if (!data) return;
+
+        // Update Detail Card (Penjelasan Disampingnya)
+        const detailTag = document.getElementById('detailTag');
+        const detailYield = document.getElementById('detailYield');
+        const detailTitle = document.getElementById('detailTitle');
+        const detailDesc = document.getElementById('detailDesc');
+        const detailSpecs = document.getElementById('detailSpecs');
+
+        if (detailTag) detailTag.textContent = data.tag;
+        if (detailYield) detailYield.innerHTML = `&bull; Hasil Olah: ${data.yield}`;
+        if (detailTitle) detailTitle.textContent = data.name;
+        if (detailDesc) detailDesc.textContent = data.desc;
+        if (detailSpecs) {
+          detailSpecs.innerHTML = data.specs.map(s => `<li><i class="fas fa-check-circle"></i> <span>${s}</span></li>`).join('');
+        }
+
+        // Update Active Slices (Pop-out effect)
+        document.querySelectorAll('.pie-slice-group').forEach(s => s.classList.remove('active-slice'));
+        const activeGroup = document.getElementById(`slice-${id}`);
+        if (activeGroup) activeGroup.classList.add('active-slice');
+      }
+
+      // Lightbox Zoom-In Controller (Full Gambar Saja)
+      function openLightbox(id) {
+        const targetId = id || currentByproductId;
+        const data = byproductData[targetId];
+        if (!data) return;
+
+        const modal = document.getElementById('pieLightboxModal');
+        const img = document.getElementById('pieLightboxImg');
+
+        if (img) {
+          img.src = data.img;
+          img.alt = data.name;
+        }
+
+        if (modal) {
+          modal.classList.add('active');
+          modal.setAttribute('aria-hidden', 'false');
+          document.body.style.overflow = 'hidden';
+        }
+      }
+
+      function closeLightbox() {
+        const modal = document.getElementById('pieLightboxModal');
+        if (modal) {
+          modal.classList.remove('active');
+          modal.setAttribute('aria-hidden', 'true');
+          document.body.style.overflow = '';
+        }
+      }
+
+      // Attach click and hover events to pie slice groups
+      document.querySelectorAll('.pie-slice-group').forEach(slice => {
+        const id = slice.getAttribute('data-id');
+        slice.addEventListener('click', () => {
+          selectByproduct(id);
+          openLightbox(id);
+        });
+        slice.addEventListener('mouseenter', () => selectByproduct(id));
+      });
+
+      // Close handlers for lightbox (Klik di mana saja atau tekan Escape)
+      const pieLightboxModal = document.getElementById('pieLightboxModal');
+      if (pieLightboxModal) {
+        pieLightboxModal.addEventListener('click', closeLightbox);
+      }
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeLightbox();
+      });
+
+      // Fungsi scroll presisi tepat di bawah header
+      const scrollToByproducts = (smooth = true) => {
+        const targetSec = document.getElementById('produk-sampingan');
+        if (!targetSec) return;
+        const header = document.getElementById('siteHeader') || document.querySelector('.site-header');
+        const headerH = header ? header.getBoundingClientRect().height : 74;
+        const targetY = window.pageYOffset + targetSec.getBoundingClientRect().top - headerH;
+        window.scrollTo({
+          top: Math.max(0, targetY),
+          behavior: smooth ? 'smooth' : 'instant'
+        });
+      };
+
+      // Auto Highlight / Select slice jika ada hash di URL
+      const highlightTargetRow = () => {
+        const hash = window.location.hash;
+        if (hash) {
+          // Check if hash matches byproduct
+          if (hash === '#bp-pelet-sekam' || hash === '#bp-beras-utama') selectByproduct('pelet-sekam');
+          else if (hash === '#bp-bekatul') selectByproduct('bekatul');
+          else if (hash === '#bp-beras-broken') selectByproduct('beras-broken');
+          else if (hash === '#bp-menir') selectByproduct('menir-beras');
+          else if (hash === '#bp-reject') selectByproduct('reject');
+
+          if (hash === '#produk-sampingan') {
+            setTimeout(() => scrollToByproducts(true), 60);
+          } else if (hash.startsWith('#bp-')) {
+            const showcase = document.querySelector('.pie-chart-showcase');
+            if (showcase) {
+              showcase.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+          }
+
+          const target = document.querySelector(hash);
+          if (target && target.classList.contains('catalog-item-row')) {
+            target.classList.add('highlight-active');
+            setTimeout(() => {
+              target.classList.remove('highlight-active');
+            }, 2500);
+          }
+        }
+      };
+
+      highlightTargetRow();
+      window.addEventListener('hashchange', highlightTargetRow);
+      window.addEventListener('load', () => {
+        if (window.location.hash === '#produk-sampingan') {
+          setTimeout(() => scrollToByproducts(false), 50);
+        }
+      });
+    });
+  </script>
+</body>
+</html>

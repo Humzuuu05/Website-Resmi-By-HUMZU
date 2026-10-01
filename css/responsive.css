@@ -1,0 +1,307 @@
+/* ==========================================================================
+   JATILUWIH ORGANIK - RESPONSIVE STYLES
+   ========================================================================== */
+
+/* Large Tablets & Small Desktops (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+  :root {
+    --header-height: 84px;
+  }
+
+  .nav-group {
+    display: none;
+  }
+
+  .mobile-toggle {
+    display: block;
+  }
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .products-grid .product-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .byproducts-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px;
+  }
+
+  .philosophy-banner {
+    grid-template-columns: 1fr;
+    padding: 36px;
+    gap: 24px;
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .story-content {
+    padding-left: 0;
+  }
+
+  .story-main-img {
+    height: 380px;
+  }
+
+  .stores-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+
+/* Mobile Devices (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .header-container {
+    padding: 0 20px;
+  }
+
+  .header-logo {
+    height: 28px;
+    max-width: 130px;
+  }
+
+  .hero-content {
+    padding: 100px 16px 50px;
+  }
+
+  .hero-title {
+    font-size: 2.6rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .philosophy-text-layout {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 0;
+  }
+
+  .philosophy-desc {
+    padding-left: 16px;
+  }
+
+  .pillars-clean-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 0;
+  }
+
+  .product-carousel-track {
+    padding: 15px 38px 25px;
+    gap: 20px;
+  }
+
+  .carousel-pouch-item {
+    flex: 0 0 190px;
+    max-width: 190px;
+  }
+
+  .pouch-img-wrap {
+    height: 270px;
+  }
+
+  .pouch-img-wrap img {
+    max-height: 250px;
+  }
+
+  .carousel-arrow {
+    width: 36px;
+    height: 36px;
+    font-size: 0.9rem;
+  }
+
+  .prev-arrow { left: 0px; }
+  .next-arrow { right: 0px; }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .products-grid .product-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .byproducts-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .byproduct-img-wrap {
+    width: 135px;
+    height: 135px;
+  }
+
+  .stores-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .stores-nav-tabs {
+    flex-direction: column;
+  }
+
+  .tab-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .city-filter-container {
+    flex-wrap: wrap;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .contact-info-card,
+  .contact-form-card {
+    padding: 28px 20px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    border-radius: var(--border-radius-md);
+    padding: 12px;
+  }
+
+  .newsletter-form .btn {
+    width: 100%;
+  }
+
+  .quickview-layout {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .quickview-image-wrap {
+    height: 220px;
+  }
+
+  .quickview-image-wrap img {
+    max-height: 200px;
+  }
+
+  .modal-body {
+    padding: 28px 20px;
+  }
+
+  .floating-wa-btn {
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+}
+
+/* Small mobile (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .story-float-card {
+    position: static;
+    margin-top: 16px;
+    max-width: 100%;
+  }
+
+  .story-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .byproducts-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .partner-card {
+    width: 275px;
+    padding: 20px 18px 16px;
+  }
+
+  .partner-name {
+    font-size: 1rem;
+  }
+
+  .partners-slide-group {
+    gap: 12px;
+    padding-right: 12px;
+  }
+
+  .client-ticker-name {
+    font-size: 0.82rem;
+  }
+
+  .client-ticker-sector {
+    font-size: 0.58rem;
+  }
+
+  .client-ticker-logo-wrap {
+    height: 24px;
+    max-width: 85px;
+  }
+
+  .client-ticker-logo {
+    max-height: 22px;
+  }
+
+  .partners-live-badge {
+    font-size: 0.72rem;
+    padding: 5px 14px;
+  }
+}
+

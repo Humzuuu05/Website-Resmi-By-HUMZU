@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karir - Bergabung Bersama Sentra Pengolahan Beras Presisi | PT Pangan Masa Depan</title>
+  <meta name="description" content="Peluang karir dan lowongan kerja di PT Pangan Masa Depan (PMD) Indramayu. Bergabunglah bersama tim profesional agribisnis dan pengolahan beras modern berbasis teknologi tinggi." />
+  <link rel="icon" href="assets/images/logo-pmd-icon.png" type="image/png" />
+
+  <!-- Google Fonts Preconnect & Stylesheets -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main Stylesheets -->
+  <link rel="stylesheet" href="css/style.css?v=20260918_v22" />
+  <link rel="stylesheet" href="css/responsive.css?v=20260918_v22" />
+  <link rel="stylesheet" href="css/career.css?v=20260918_v22" />
+
+  <style>
+    /* In-line header override to bypass any browser cache */
+    .site-header.solid-header {
+      position: sticky !important;
+      top: 0 !important;
+      left: 0 !important;
+      width: 100% !important;
+      height: 74px !important;
+      background: linear-gradient(180deg, rgba(78, 50, 35, 0.98) 0%, rgba(66, 42, 29, 0.97) 100%) !important;
+      backdrop-filter: blur(16px) !important;
+      -webkit-backdrop-filter: blur(16px) !important;
+      border-bottom: 1px solid rgba(197, 160, 89, 0.35) !important;
+      box-shadow: 0 10px 30px rgba(40, 22, 14, 0.30) !important;
+      z-index: 1000 !important;
+    }
+    .site-header.solid-header .header-logo {
+      filter: none !important;
+      opacity: 1 !important;
+    }
+    .site-header.solid-header .nav-link {
+      color: #F8F5EE !important;
+    }
+    .site-header.solid-header .nav-link:hover {
+      color: var(--color-gold-light, #E5CF98) !important;
+    }
+    .site-header.solid-header .nav-link.active {
+      color: #FFFFFF !important;
+      font-weight: 500 !important;
+    }
+    .site-header.solid-header .nav-link.active::after {
+      width: 100% !important;
+      background: var(--color-gold-gradient, linear-gradient(135deg, #E6CF97 0%, #C5A059 50%, #9B7830 100%)) !important;
+    }
+
+    /* Animasi Daun Bergoyang untuk Ornamen Batik Sulur Karir */
+    .career-hero-batik-motif .batik-sulur-img,
+    .batik-sulur-img {
+      display: block !important;
+      will-change: transform !important;
+      backface-visibility: hidden !important;
+      -webkit-backface-visibility: hidden !important;
+      transform-origin: 88% 8% !important;
+      animation: batikLeafSwayCascadeHero 6.8s cubic-bezier(0.42, 0, 0.58, 1) infinite !important;
+    }
+    @keyframes batikLeafSwayCascadeHero {
+      0% {
+        transform: rotate(0deg) translate3d(0, 0, 0) scale(1);
+      }
+      26% {
+        transform: rotate(-2.6deg) translate3d(-10px, 8px, 0) scale(1.01);
+      }
+      52% {
+        transform: rotate(0.5deg) translate3d(-2px, 2px, 0) scale(1.002);
+      }
+      76% {
+        transform: rotate(2.0deg) translate3d(8px, -5px, 0) scale(0.996);
+      }
+      100% {
+        transform: rotate(0deg) translate3d(0, 0, 0) scale(1);
+      }
+    }
+  </style>
+</head>
+<body class="catalog-body">
+
+  <!-- ========================================================================
+       SOLID SITE HEADER (IDENTIK DENGAN HALAMAN PRODUK & PRODUK SAMPINGAN)
+       ======================================================================== -->
+  <header class="site-header solid-header" id="siteHeader">
+    <div class="header-container">
+      <!-- Logo Kiri -->
+      <div class="header-brand">
+        <a href="index.html#hero" aria-label="Beranda PT Pangan Masa Depan">
+          <img src="assets/images/logo-pmd-light.png?v=3" alt="PT Pangan Masa Depan (PMD) Logo" class="header-logo logo-light" style="display: block;" />
+        </a>
+      </div>
+
+      <!-- Navigasi Kanan -->
+      <nav class="nav-wrapper">
+        <ul class="nav-group">
+          <li><a href="index.html#about" class="nav-link">Tentang Kami</a></li>
+          <li><a href="products.html" class="nav-link">Produk</a></li>
+          <li><a href="career.html" class="nav-link active">Karir</a></li>
+          <li><a href="index.html#contact" class="nav-link">Hubungi Kami</a></li>
+        </ul>
+      </nav>
+
+      <!-- Tombol Menu Seluler -->
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Buka Menu Navigasi" style="color: #FFFFFF;">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Drawer Menu Seluler -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Menu Seluler">
+    <div>
+      <button class="drawer-close" id="drawerClose" aria-label="Tutup Menu">
+        <i class="fas fa-times"></i>
+      </button>
+      <div style="margin-bottom: 28px;">
+        <img src="assets/images/logo-pmd-dark.png" alt="PT Pangan Masa Depan (PMD)" style="height: 32px; width: auto;" />
+      </div>
+      <ul class="drawer-nav">
+        <li><a href="index.html#hero" class="drawer-link">Beranda</a></li>
+        <li><a href="index.html#about" class="drawer-link">Tentang Kami</a></li>
+        <li><a href="products.html" class="drawer-link">Produk</a></li>
+        <li><a href="career.html" class="drawer-link" style="color: var(--color-gold-deep); font-weight: 700;">Karir</a></li>
+        <li><a href="index.html#contact" class="drawer-link">Hubungi Kami</a></li>
+      </ul>
+    </div>
+    <div style="font-size: 0.85rem; color: var(--text-muted); border-top: 1px solid var(--border-subtle); padding-top: 20px;">
+      <p><strong>Hotline:</strong> +62 811-3880-0034</p>
+      <p>PT Pangan Masa Depan - Indramayu</p>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       HERO SINEMATIK KARIER (CLEAN & ELEGAN DENGAN MOTIF SULUR BATIK NUSANTARA)
+       ======================================================================== -->
+  <section class="career-hero-cinematic">
+    <div class="container career-hero-inner">
+
+      <!-- Konten Utama: Judul, Paragraf, & Email Pelamar -->
+      <div class="career-hero-content">
+        <h1 class="career-hero-title">
+          Bergabunglah<br>
+          <span>Bersama Kami</span>
+        </h1>
+        <p class="career-hero-desc">
+          Mengolah pangan adalah pekerjaan yang menuntut ketelitian setiap hari. Kami mencari orang-orang yang mau menjaga standar itu &mdash; di lantai produksi, di gudang, di laboratorium mutu, maupun di kantor.
+        </p>
+
+        <!-- Kotak Pill Email Lamaran -->
+        <div class="career-hero-apply-row">
+          <span class="apply-prompt-text">Kirim lamaran ke</span>
+          <a href="mailto:info@panganmasadepan.com?subject=Lamaran%20Pekerjaan%20-%20PT%20Pangan%20Masa%20Depan" 
+             class="apply-email-badge" 
+             id="careerEmailBadge"
+             title="Klik untuk mengirim email langsung">
+            <i class="fas fa-envelope"></i>
+            <span id="careerEmailText">INFO@PANGANMASADEPAN.COM</span>
+            <button type="button" class="btn-copy-email" id="copyCareerEmail" aria-label="Salin alamat email" title="Salin email">
+              <i class="far fa-copy"></i>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ornamen Seni Batik Sulur Padi Organik di Sisi Kanan (Lengkung Menjuntai Sesuai Sketsa) -->
+    <div class="career-hero-batik-motif" aria-hidden="true">
+      <img src="assets/images/batik-padi-diagonal-cascade.png?v=11" alt="Ornamen Batik Sulur Padi" class="batik-sulur-img" />
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FOOTER DENGAN PETA GOOGLE MAPS DAN KONTAK LENGKAP
+       ======================================================================== -->
+  <footer class="site-footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Info Brand & Tagline -->
+        <div class="footer-brand">
+          <img src="assets/images/logo-pmd-light.png?v=2" alt="PT Pangan Masa Depan (PMD)" class="footer-logo" />
+          <p class="footer-tagline">
+            Menghadirkan kebaikan beras alami berkualitas tinggi langsung dari sentra lumbung padi Indramayu melalui fasilitas penggilingan modern berstandar presisi tinggi.
+          </p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram PT Pangan Masa Depan"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook PT Pangan Masa Depan"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="LinkedIn PT Pangan Masa Depan"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://wa.me/6281138800034" aria-label="WhatsApp PT Pangan Masa Depan"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- Menu Cepat -->
+        <div class="footer-col">
+          <h4>Tautan Cepat</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#hero">Beranda</a></li>
+            <li><a href="products.html">Produk</a></li>
+            <li><a href="products.html#produk-sampingan">Produk Sampingan</a></li>
+            <li><a href="index.html#about">Tentang Kami</a></li>
+            <li><a href="career.html">Karir</a></li>
+            <li><a href="index.html#contact">Hubungi Kami</a></li>
+          </ul>
+        </div>
+
+        <!-- Kontak & Kantor Pusat -->
+        <div class="footer-col">
+          <h4>Kantor Pusat &amp; Kontak</h4>
+          <ul class="footer-links">
+            <li><i class="fas fa-map-marker-alt" style="margin-right: 8px; color: var(--color-warm-amber);"></i> Jalan Rancahan, Blok Sukamelang RT 08/04, Karangmulya, Kec. Kandanghaur, Kabupaten Indramayu, Jawa Barat 45254</li>
+            <li><i class="fas fa-phone-alt" style="margin-right: 8px; color: var(--color-warm-amber);"></i> +62 811-3880-0034</li>
+            <li><i class="fas fa-envelope" style="margin-right: 8px; color: var(--color-warm-amber);"></i> info@panganmasadepan.com</li>
+            <li><i class="fas fa-clock" style="margin-right: 8px; color: var(--color-warm-amber);"></i> 08.00 - 17.00 WIB</li>
+          </ul>
+        </div>
+
+        <!-- Peta Google Maps (Paling Kanan & Ukuran Lebih Besar) -->
+        <div class="footer-col footer-map-col">
+          <div class="footer-map-wrapper">
+            <iframe 
+              src="https://maps.google.com/maps?q=PT%20Pangan%20Masa%20Depan,%20Jalan%20Rancahan,%20Karangmulya,%20Kandanghaur,%20Kabupaten%20Indramayu,%20Jawa%20Barat&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=&amp;output=embed" 
+              width="100%" 
+              height="220" 
+              style="border:0; border-radius: 12px; display: block;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Peta Lokasi Pabrik PT Pangan Masa Depan">
+            </iframe>
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=PT+Pangan+Masa+Depan+Kandanghaur+Indramayu" target="_blank" rel="noopener noreferrer" class="footer-map-link">
+              <i class="fas fa-map-marked-alt"></i>
+              <span>Buka di Google Maps</span>
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bagian Bawah Footer -->
+      <div class="footer-bottom">
+        <div>
+          © 2026 <strong>PT Pangan Masa Depan</strong>. Hak Cipta Dilindungi Undang-Undang.
+        </div>
+        <div>
+          Kandanghaur, Indramayu • Fasilitas Pengolahan Beras Presisi
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Tombol WhatsApp Mengambang -->
+  <a href="https://wa.me/6281138800034?text=Halo%20PT%20Pangan%20Masa%20Depan,%20saya%20ingin%20menanyakan%20informasi%20karir%20dan%20lowongan%20kerja." target="_blank" rel="noopener noreferrer" class="floating-wa-btn" aria-label="Hubungi WhatsApp Customer Service">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- ========================================================================
+       SKRIP INTERAKTIF HALAMAN KARIR
+       ======================================================================== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Mobile Drawer Navigation
+      const mobileToggle = document.getElementById('mobileToggle');
+      const drawerClose = document.getElementById('drawerClose');
+      const mobileDrawer = document.getElementById('mobileDrawer');
+      const drawerOverlay = document.getElementById('drawerOverlay');
+
+      const openDrawer = () => {
+        if (mobileDrawer) mobileDrawer.classList.add('active');
+        if (drawerOverlay) drawerOverlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      };
+
+      const closeDrawer = () => {
+        if (mobileDrawer) mobileDrawer.classList.remove('active');
+        if (drawerOverlay) drawerOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+      };
+
+      if (mobileToggle) mobileToggle.addEventListener('click', openDrawer);
+      if (drawerClose) drawerClose.addEventListener('click', closeDrawer);
+      if (drawerOverlay) drawerOverlay.addEventListener('click', closeDrawer);
+
+      // Header scroll background toggle
+      const siteHeader = document.getElementById('siteHeader');
+      const handleHeaderScroll = () => {
+        if (!siteHeader) return;
+        if (window.scrollY > 40) {
+          siteHeader.classList.add('scrolled');
+        } else {
+          siteHeader.classList.remove('scrolled');
+        }
+      };
+      window.addEventListener('scroll', handleHeaderScroll, { passive: true });
+      handleHeaderScroll();
+
+      // Salin Email Lamaran ke Clipboard
+      const copyBtn = document.getElementById('copyCareerEmail');
+      const copyToast = document.getElementById('careerCopyToast');
+      if (copyBtn) {
+        copyBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          const email = 'info@panganmasadepan.com';
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(email).then(() => {
+              if (copyToast) {
+                copyToast.classList.add('active');
+                setTimeout(() => {
+                  copyToast.classList.remove('active');
+                }, 2200);
+              }
+            }).catch(() => {
+              window.location.href = 'mailto:' + email;
+            });
+          } else {
+            window.location.href = 'mailto:' + email;
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,1240 @@
+/* ==========================================================================
+   HERO SECTION SINEMATIK & ELEGAN (ALA PANGAN MASA DEPAN)
+   ========================================================================== */
+.career-hero-cinematic {
+  position: relative;
+  min-height: calc(100vh - 74px);
+  display: flex;
+  align-items: center;
+  padding: 60px 0 65px;
+  background-color: var(--bg-primary); /* #FAF8F5 identik dengan Tentang Kami & Katalog */
+  border-bottom: 1px solid rgba(197, 160, 89, 0.22);
+  overflow: hidden;
+}
+
+.career-hero-bg-overlay {
+  display: none;
+}
+
+.career-hero-inner {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+/* Main Hero Typography */
+.career-hero-content {
+  max-width: min(680px, 56vw);
+  margin-bottom: 0;
+  position: relative;
+  z-index: 2;
+  padding-left: clamp(16px, 2.8vw, 40px);
+}
+
+.career-hero-title {
+  font-family: var(--font-serif, 'Playfair Display', Georgia, serif);
+  font-size: clamp(3.2rem, 5.8vw, 4.6rem);
+  font-weight: 700;
+  line-height: 1.15;
+  color: #1A1410;
+  margin: 0 0 24px;
+  letter-spacing: -0.018em;
+  text-shadow: none;
+}
+
+.career-hero-title span {
+  font-weight: 600;
+  color: #8C6A28;
+}
+
+.career-hero-desc {
+  font-family: var(--font-sans);
+  font-size: clamp(1.1rem, 1.45vw, 1.2rem);
+  line-height: 1.8;
+  color: #4E4238;
+  max-width: 620px;
+  margin: 0 0 38px;
+  font-weight: 400;
+}
+
+/* Email Pill Application Box */
+.career-hero-apply-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.apply-prompt-text {
+  font-family: var(--font-sans);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #5C4F44;
+  letter-spacing: 0.02em;
+}
+
+.apply-email-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  padding: 13px 28px;
+  background: #FFFFFF;
+  border: 1px solid rgba(197, 160, 89, 0.48);
+  border-radius: 14px;
+  color: #241D18;
+  text-decoration: none;
+  font-family: var(--font-sans);
+  font-size: 1.02rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  box-shadow: 0 6px 22px rgba(35, 27, 21, 0.07);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.apply-email-badge i {
+  color: var(--color-warm-amber, #C5A059);
+  font-size: 1.15rem;
+}
+
+.apply-email-badge:hover {
+  background: #FFFDF9;
+  border-color: #D4AF37;
+  color: #1A1410;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(197, 160, 89, 0.28);
+}
+
+.btn-copy-email {
+  background: transparent;
+  border: none;
+  color: var(--color-warm-amber, #C5A059);
+  cursor: pointer;
+  padding: 4px 8px;
+  font-size: 1.05rem;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-copy-email:hover {
+  color: #1A1410;
+  background: rgba(197, 160, 89, 0.22);
+  transform: scale(1.1);
+}
+
+.copy-toast {
+  position: absolute;
+  top: -34px;
+  right: 0;
+  background: #241D18;
+  color: #F8F4EA;
+  border: 1px solid rgba(197, 160, 89, 0.6);
+  padding: 5px 14px;
+  border-radius: 8px;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(6px);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.copy-toast.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ==========================================================================
+   ORNAMEN SENI BATIK SULUR PADI ORGANIK (LENGKUNG MENJUNTAI BESAR & MEGAH)
+   ========================================================================== */
+.career-hero-batik-motif {
+  position: absolute;
+  right: -30px;
+  top: -38px;
+  width: min(1560px, 86vw);
+  max-height: 108%;
+  pointer-events: none;
+  z-index: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  opacity: 0.22;
+  transition: opacity 0.4s ease;
+}
+
+.batik-sulur-img {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  object-position: top right;
+  filter: drop-shadow(0 10px 24px rgba(197, 160, 89, 0.08));
+  display: block;
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform-origin: 88% 8%;
+  animation: batikLeafSwayCascadeHero 6.8s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+}
+
+/* Animasi Alami Daun Bergoyang untuk Sulur Hero Karier */
+@keyframes batikLeafSwayCascadeHero {
+  0% {
+    transform: rotate(0deg) translate3d(0, 0, 0) scale(1);
+  }
+  26% {
+    transform: rotate(-2.6deg) translate3d(-10px, 8px, 0) scale(1.01);
+  }
+  52% {
+    transform: rotate(0.5deg) translate3d(-2px, 2px, 0) scale(1.002);
+  }
+  76% {
+    transform: rotate(2.0deg) translate3d(8px, -5px, 0) scale(0.996);
+  }
+  100% {
+    transform: rotate(0deg) translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .batik-sulur-img {
+    animation: none !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .career-hero-content {
+    max-width: 100%;
+  }
+  .career-hero-batik-motif {
+    width: min(920px, 88vw);
+    opacity: 0.16;
+    right: -20px;
+    top: -15px;
+    max-height: 98%;
+  }
+}
+
+@media (max-width: 640px) {
+  .career-hero-content {
+    padding-left: 0;
+  }
+  .career-hero-title {
+    font-size: 2.5rem;
+    line-height: 1.16;
+    margin-bottom: 18px;
+  }
+  .career-hero-desc {
+    font-size: 1.04rem;
+    line-height: 1.7;
+    margin-bottom: 28px;
+  }
+  .apply-email-badge {
+    padding: 12px 20px;
+    font-size: 0.86rem;
+    max-width: 100%;
+  }
+  .career-hero-batik-motif {
+    width: 480px;
+    opacity: 0.11;
+    right: -15px;
+    top: -8px;
+    max-height: 94%;
+  }
+}
+
+/* Bottom CTA Card */
+.career-hero-cta-banner {
+  position: relative;
+  background: linear-gradient(135deg, #FFFFFF 0%, #FAF6EE 100%);
+  border: 1px solid rgba(197, 160, 89, 0.38);
+  border-radius: 22px;
+  padding: 32px 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 36px;
+  box-shadow: 0 16px 45px rgba(35, 27, 21, 0.07), 0 0 0 1px rgba(197, 160, 89, 0.1) inset;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.career-hero-cta-banner:hover {
+  border-color: rgba(197, 160, 89, 0.65);
+  box-shadow: 0 24px 55px rgba(197, 160, 89, 0.18), 0 0 0 1px rgba(197, 160, 89, 0.2) inset;
+  transform: translateY(-2px);
+}
+
+.cta-banner-left {
+  flex: 1;
+}
+
+.cta-banner-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 5px 14px;
+  background: rgba(197, 160, 89, 0.14);
+  border: 1px solid rgba(197, 160, 89, 0.35);
+  border-radius: 999px;
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #7C5F24;
+  margin-bottom: 14px;
+}
+
+.pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #C5A059;
+  box-shadow: 0 0 0 0 rgba(197, 160, 89, 0.7);
+  animation: pulseGoldDot 2s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+
+.cta-banner-heading {
+  font-family: var(--font-serif, 'Playfair Display', Georgia, serif);
+  font-size: 1.85rem;
+  font-weight: 600;
+  color: #1A1410;
+  margin: 0 0 8px;
+  line-height: 1.25;
+}
+
+.cta-banner-sub {
+  font-family: var(--font-sans);
+  font-size: 0.93rem;
+  color: #6B5E54;
+  margin: 0;
+  max-width: 640px;
+  line-height: 1.6;
+}
+
+.btn-explore-openings {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 30px;
+  background: linear-gradient(135deg, #D4AF37 0%, #C5A059 100%);
+  color: #171109;
+  font-family: var(--font-sans);
+  font-size: 0.94rem;
+  font-weight: 700;
+  border-radius: var(--border-radius-full, 999px);
+  text-decoration: none;
+  box-shadow: 0 10px 24px rgba(197, 160, 89, 0.35);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  white-space: nowrap;
+}
+
+.btn-explore-openings i {
+  transition: transform 0.25s ease;
+  font-size: 0.95rem;
+}
+
+.btn-explore-openings:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 16px 36px rgba(197, 160, 89, 0.5);
+  background: linear-gradient(135deg, #E6C86E 0%, #D4AF37 100%);
+  color: #171109;
+}
+
+.btn-explore-openings:hover i {
+  transform: translateX(4px);
+}
+
+@media screen and (max-width: 900px) {
+  .career-hero-cinematic {
+    padding: 45px 0 45px;
+    min-height: auto;
+  }
+  .copy-toast {
+    position: static;
+    display: inline-block;
+    margin-left: 8px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .career-hero-title {
+    font-size: 2.35rem;
+  }
+  .career-hero-desc {
+    font-size: 0.98rem;
+  }
+  .apply-email-badge {
+    padding: 9px 16px;
+    font-size: 0.84rem;
+  }
+}
+
+/* Common Section Layout */
+.career-section {
+  padding: 64px 0;
+  position: relative;
+  background-color: var(--bg-primary);
+}
+
+.career-section-alt {
+  background-color: var(--bg-primary);
+  border-top: 1px solid rgba(197, 160, 89, 0.2);
+  border-bottom: 1px solid rgba(197, 160, 89, 0.2);
+}
+
+.career-section-header {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 48px;
+}
+
+.career-section-header .section-tag {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-gold-deep);
+  margin-bottom: 8px;
+}
+
+.career-section-header h2 {
+  font-family: var(--font-serif);
+  font-size: 2.3rem;
+  font-weight: 600;
+  color: var(--color-earth-dark);
+  line-height: 1.25;
+  margin-bottom: 14px;
+}
+
+.career-section-header p {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+/* Section 1: Culture & Nilai Perusahaan */
+.career-culture-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.career-culture-card {
+  background: #FFFFFF;
+  border-radius: var(--border-radius-md);
+  padding: 32px 28px;
+  border: 1px solid rgba(197, 160, 89, 0.24);
+  box-shadow: 0 6px 20px rgba(35, 27, 21, 0.04);
+  transition: all var(--transition-normal);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.career-culture-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--color-gold-gradient);
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+}
+
+.career-culture-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(197, 160, 89, 0.55);
+  box-shadow: 0 16px 36px rgba(197, 160, 89, 0.16);
+}
+
+.career-culture-card:hover::before {
+  opacity: 1;
+}
+
+.culture-icon-wrapper {
+  width: 58px;
+  height: 58px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(230, 207, 151, 0.28) 0%, rgba(197, 160, 89, 0.15) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 22px;
+  border: 1px solid rgba(197, 160, 89, 0.35);
+  color: var(--color-gold-deep);
+  font-size: 1.45rem;
+  transition: transform var(--transition-normal);
+}
+
+.career-culture-card:hover .culture-icon-wrapper {
+  transform: scale(1.08) rotate(3deg);
+}
+
+.culture-card-title {
+  font-family: var(--font-serif);
+  font-size: 1.42rem;
+  font-weight: 600;
+  color: var(--color-earth-dark);
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.culture-card-desc {
+  font-size: 0.94rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* Section 2: Lingkungan Kerja & Fasilitas */
+.facility-workplace-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 42px;
+  align-items: center;
+}
+
+.facility-img-frame {
+  position: relative;
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(35, 27, 21, 0.14);
+  border: 2px solid rgba(197, 160, 89, 0.35);
+}
+
+.facility-img-frame img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.facility-img-frame:hover img {
+  transform: scale(1.03);
+}
+
+.facility-overlay-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 24px 28px;
+  background: linear-gradient(180deg, transparent 0%, rgba(24, 20, 16, 0.88) 100%);
+  color: #FFFFFF;
+}
+
+.facility-overlay-caption h4 {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-gold-light);
+  margin-bottom: 4px;
+}
+
+.facility-overlay-caption p {
+  font-size: 0.86rem;
+  color: #E2D9CE;
+  line-height: 1.45;
+}
+
+.workplace-perks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.workplace-perk-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  background: #FFFFFF;
+  padding: 16px 20px;
+  border-radius: var(--border-radius-md);
+  border: 1px solid rgba(197, 160, 89, 0.2);
+  transition: all var(--transition-normal);
+}
+
+.workplace-perk-item:hover {
+  transform: translateX(6px);
+  border-color: rgba(197, 160, 89, 0.45);
+  box-shadow: 0 4px 16px rgba(197, 160, 89, 0.12);
+}
+
+.perk-bullet-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(197, 160, 89, 0.15);
+  color: var(--color-gold-deep);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.perk-text h5 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-earth-dark);
+  margin-bottom: 3px;
+}
+
+.perk-text p {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Section 3: Lowongan Pekerjaan (Job Filter & Cards) */
+.job-filter-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 38px;
+}
+
+.job-filter-btn {
+  padding: 9px 22px;
+  border-radius: var(--border-radius-full);
+  border: 1px solid rgba(197, 160, 89, 0.35);
+  background: #FFFFFF;
+  color: var(--text-main);
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.job-filter-btn:hover {
+  border-color: var(--color-gold);
+  color: var(--color-gold-deep);
+  background: var(--bg-primary);
+}
+
+.job-filter-btn.active {
+  background: var(--color-gold-gradient);
+  border-color: var(--color-gold);
+  color: #1A1410;
+  box-shadow: 0 4px 14px rgba(197, 160, 89, 0.3);
+}
+
+.jobs-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.job-card {
+  background: #FFFFFF;
+  border-radius: var(--border-radius-md);
+  border: 1px solid rgba(197, 160, 89, 0.28);
+  box-shadow: 0 6px 20px rgba(35, 27, 21, 0.04);
+  transition: all var(--transition-normal);
+  overflow: hidden;
+}
+
+.job-card:hover {
+  border-color: rgba(197, 160, 89, 0.55);
+  box-shadow: 0 12px 30px rgba(197, 160, 89, 0.14);
+}
+
+.job-card-header {
+  padding: 24px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  cursor: pointer;
+  background: #FFFFFF;
+  transition: background-color var(--transition-fast);
+}
+
+.job-card-header:hover {
+  background: #FCFAF6;
+}
+
+.job-main-meta {
+  flex: 1;
+}
+
+.job-title-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.job-title {
+  font-family: var(--font-serif);
+  font-size: 1.48rem;
+  font-weight: 600;
+  color: var(--color-earth-dark);
+  margin: 0;
+  line-height: 1.25;
+}
+
+.job-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.job-pill {
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 3px 12px;
+  border-radius: var(--border-radius-full);
+  background: var(--bg-primary);
+  color: var(--color-earth-dark);
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.job-pill.dept {
+  background: rgba(59, 83, 64, 0.1);
+  color: var(--color-paddy-green);
+  border: 1px solid rgba(59, 83, 64, 0.2);
+}
+
+.job-pill.time {
+  background: rgba(197, 160, 89, 0.15);
+  color: var(--color-gold-deep);
+  border: 1px solid rgba(197, 160, 89, 0.3);
+}
+
+.job-short-desc {
+  font-size: 0.94rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+  margin: 6px 0 0;
+}
+
+.job-action-area {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-shrink: 0;
+}
+
+.btn-toggle-details {
+  background: transparent;
+  border: 1px solid rgba(197, 160, 89, 0.4);
+  padding: 8px 16px;
+  border-radius: var(--border-radius-full);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-gold-deep);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all var(--transition-fast);
+}
+
+.btn-toggle-details:hover {
+  background: var(--color-gold-gradient);
+  color: #1A1410;
+  border-color: var(--color-gold);
+}
+
+.btn-toggle-details i {
+  transition: transform var(--transition-fast);
+}
+
+.job-card.open .btn-toggle-details i {
+  transform: rotate(180deg);
+}
+
+/* Accordion Details */
+.job-card-details {
+  display: none;
+  padding: 0 28px 28px;
+  border-top: 1px dashed rgba(197, 160, 89, 0.3);
+  background: #FCFAF6;
+}
+
+.job-card.open .job-card-details {
+  display: block;
+  animation: fadeIn 0.35s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.job-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  padding-top: 22px;
+}
+
+.detail-subblock h5 {
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: var(--color-earth-dark);
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.detail-subblock h5 i {
+  color: var(--color-gold-deep);
+}
+
+.detail-checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.detail-checklist li {
+  font-size: 0.89rem;
+  color: var(--text-main);
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  line-height: 1.5;
+}
+
+.detail-checklist li i {
+  color: var(--color-gold-deep);
+  font-size: 0.8rem;
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+.job-footer-actions {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(197, 160, 89, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.job-perks-inline {
+  display: flex;
+  gap: 16px;
+  font-size: 0.86rem;
+  color: var(--text-muted);
+}
+
+.job-perks-inline span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.job-perks-inline i {
+  color: var(--color-paddy-green);
+}
+
+.btn-apply-job {
+  background: var(--color-gold-gradient);
+  color: #1A1410;
+  border: none;
+  padding: 10px 24px;
+  border-radius: var(--border-radius-full);
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 14px rgba(197, 160, 89, 0.28);
+  transition: all var(--transition-normal);
+}
+
+.btn-apply-job:hover {
+  background: var(--color-gold-gradient-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(197, 160, 89, 0.4);
+}
+
+/* Section 4: Tahapan Rekrutmen (Roadmap / Steps) */
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  position: relative;
+}
+
+.step-card {
+  background: #FFFFFF;
+  border: 1px solid rgba(197, 160, 89, 0.25);
+  border-radius: var(--border-radius-md);
+  padding: 30px 22px;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(35, 27, 21, 0.04);
+  position: relative;
+  transition: all var(--transition-normal);
+}
+
+.step-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-gold);
+  box-shadow: 0 12px 28px rgba(197, 160, 89, 0.16);
+}
+
+.step-number-badge {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--color-gold-gradient);
+  color: #1A1410;
+  font-weight: 800;
+  font-size: 1.15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  box-shadow: 0 4px 12px rgba(197, 160, 89, 0.3);
+}
+
+.step-title {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-earth-dark);
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+.step-desc {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* Section 5: Application Form & Direct Channels */
+.career-application-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 36px;
+}
+
+.career-form-card {
+  background: #FFFFFF;
+  border-radius: var(--border-radius-md);
+  padding: 36px 32px;
+  border: 1px solid rgba(197, 160, 89, 0.3);
+  box-shadow: 0 10px 30px rgba(35, 27, 21, 0.05);
+}
+
+.form-group-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--color-earth-dark);
+  margin-bottom: 6px;
+}
+
+.form-group label span.req {
+  color: #C0392B;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  width: 100%;
+  padding: 12px 16px;
+  background: #FAF8F5;
+  border: 1px solid rgba(197, 160, 89, 0.35);
+  border-radius: var(--border-radius-sm);
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
+  color: var(--text-main);
+  transition: all var(--transition-fast);
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  outline: none;
+  background: #FFFFFF;
+  border-color: var(--color-gold);
+  box-shadow: 0 0 0 3px rgba(197, 160, 89, 0.18);
+}
+
+.form-textarea {
+  min-height: 95px;
+  resize: vertical;
+}
+
+.form-hint {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  margin-top: 5px;
+  display: block;
+}
+
+.btn-submit-app {
+  width: 100%;
+  background: var(--color-gold-gradient);
+  color: #1A1410;
+  border: none;
+  padding: 14px 28px;
+  border-radius: var(--border-radius-sm);
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0 6px 18px rgba(197, 160, 89, 0.3);
+  transition: all var(--transition-normal);
+}
+
+.btn-submit-app:hover {
+  background: var(--color-gold-gradient-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(197, 160, 89, 0.42);
+}
+
+/* Sidebar Channels & Fraud Warning */
+.career-channels-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.channel-info-box {
+  background: #FFFFFF;
+  border-radius: var(--border-radius-md);
+  padding: 28px 24px;
+  border: 1px solid rgba(197, 160, 89, 0.25);
+  box-shadow: 0 6px 20px rgba(35, 27, 21, 0.04);
+}
+
+.channel-info-box h4 {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--color-earth-dark);
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.channel-info-box h4 i {
+  color: var(--color-gold-deep);
+}
+
+.channel-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.channel-links li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.92rem;
+}
+
+.channel-links li i {
+  color: var(--color-gold-deep);
+  font-size: 1.1rem;
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+.channel-links a {
+  color: var(--color-earth-dark);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.channel-links a:hover {
+  color: var(--color-gold-deep);
+  text-decoration: underline;
+}
+
+/* Fraud Alert Box */
+.fraud-warning-box {
+  background: #FFF9F2;
+  border: 1.5px dashed rgba(197, 160, 89, 0.6);
+  border-radius: var(--border-radius-md);
+  padding: 22px 20px;
+}
+
+.fraud-warning-box h5 {
+  color: #A0641A;
+  font-size: 0.98rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.fraud-warning-box p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Section 6: FAQ */
+.faq-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.faq-item {
+  background: #FFFFFF;
+  border-radius: var(--border-radius-md);
+  border: 1px solid rgba(197, 160, 89, 0.22);
+  padding: 22px 24px;
+  box-shadow: 0 4px 14px rgba(35, 27, 21, 0.03);
+  transition: all var(--transition-fast);
+}
+
+.faq-item:hover {
+  border-color: rgba(197, 160, 89, 0.45);
+}
+
+.faq-question {
+  font-family: var(--font-serif);
+  font-size: 1.18rem;
+  font-weight: 600;
+  color: var(--color-earth-dark);
+  margin-bottom: 8px;
+}
+
+.faq-answer {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Submission Success Toast/Banner */
+.apply-success-message {
+  display: none;
+  background: #EBF5EE;
+  border: 1px solid #73B588;
+  border-radius: var(--border-radius-sm);
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  color: #275634;
+  font-size: 0.92rem;
+  animation: fadeIn 0.3s ease;
+}
+
+.apply-success-message i {
+  margin-right: 8px;
+  font-size: 1.1rem;
+}
+
+/* Responsive Media Queries */
+@media screen and (max-width: 992px) {
+  .career-culture-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .facility-workplace-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .facility-img-frame img {
+    height: 300px;
+  }
+
+  .steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .career-application-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .career-culture-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-group-row {
+    grid-template-columns: 1fr;
+  }
+
+  .job-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .job-action-area {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .job-details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .job-footer-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .btn-apply-job {
+    width: 100%;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Industri Pengolahan Pangan Modern, Fasilitas Penggilingan Presisi & Ragam Produk Bernilai Tinggi</title>
+  <meta name="description" content="Industri pengolahan pangan modern dengan fasilitas penggilingan presisi dan ragam produk beras organik bernilai tinggi." />
+  <link rel="icon" href="assets/images/logo-pmd-icon.png" type="image/png" />
+
+  <!-- Google Fonts Preconnect & Stylesheets -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main Stylesheets -->
+  <link rel="stylesheet" href="css/style.css?v=20260918_v53" />
+  <link rel="stylesheet" href="css/responsive.css?v=20260918_v25" />
+</head>
+<body>
+
+  <!-- ========================================================================
+       SITE HEADER & NAVIGATION (BAHASA INDONESIA)
+       ======================================================================== -->
+  <header class="site-header transparent-mode" id="siteHeader">
+    <div class="header-container">
+      <!-- Logo Kiri -->
+      <div class="header-brand">
+        <a href="#hero" aria-label="Beranda PT Pangan Masa Depan">
+          <img src="assets/images/logo-pmd-light.png?v=3" alt="PT Pangan Masa Depan (PMD) Logo" class="header-logo logo-light" />
+        </a>
+      </div>
+
+      <!-- Navigasi Kanan -->
+      <nav class="nav-wrapper">
+        <ul class="nav-group">
+          <li><a href="#about" class="nav-link">Tentang Kami</a></li>
+          <li><a href="products.html" class="nav-link">Produk</a></li>
+          <li><a href="career.html" class="nav-link">Karir</a></li>
+          <li><a href="#contact" class="nav-link">Hubungi Kami</a></li>
+        </ul>
+      </nav>
+
+      <!-- Tombol Menu Seluler -->
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Buka Menu Navigasi">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Drawer Menu Seluler -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Menu Seluler">
+    <div>
+      <button class="drawer-close" id="drawerClose" aria-label="Tutup Menu">
+        <i class="fas fa-times"></i>
+      </button>
+      <div style="margin-bottom: 28px;">
+        <img src="assets/images/logo-pmd-dark.png" alt="PT Pangan Masa Depan (PMD)" style="height: 32px; width: auto;" />
+      </div>
+      <ul class="drawer-nav">
+        <li><a href="#hero" class="drawer-link">Beranda</a></li>
+        <li><a href="#about" class="drawer-link">Tentang Kami</a></li>
+        <li><a href="products.html" class="drawer-link">Produk</a></li>
+        <li><a href="career.html" class="drawer-link">Karir</a></li>
+        <li><a href="#contact" class="drawer-link">Hubungi Kami</a></li>
+      </ul>
+    </div>
+    <div style="font-size: 0.85rem; color: var(--text-muted); border-top: 1px solid var(--border-subtle); padding-top: 20px;">
+      <p><strong>Hotline:</strong> +62 811-3880-0034</p>
+      <p>PT Pangan Masa Depan - Indramayu</p>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       HERO SECTION (BAHASA INDONESIA)
+       ======================================================================== -->
+  <section class="hero-section" id="hero">
+    <!-- Video background with fallback -->
+    <div class="hero-fallback-bg"></div>
+    <video autoplay muted loop playsinline class="hero-video-bg" poster="assets/images/bali-field.jpg">
+      <source src="https://jatiluwihorganik.com/wp-content/uploads/2026/06/Jatiluwih-Organik-video-converter.com_.webm" type="video/webm" />
+    </video>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <h1 class="hero-title">
+        Industri Pengolahan Pangan Modern,<br />
+        <em>Fasilitas Penggilingan Presisi & Ragam Produk Bernilai Tinggi</em>
+      </h1>
+      <div class="hero-actions">
+        <a href="products.html" class="btn btn-primary" style="padding: 14px 36px; font-size: 1rem;">
+          Lihat Produk
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       TENTANG KAMI · PROFIL PERUSAHAAN (PT PANGAN MASA DEPAN)
+       ======================================================================== -->
+  <section class="philosophy-section" id="about">
+    <div class="about-editorial-wrap">
+      <!-- Ornamen Seni Batik Sulur Padi Nusantara (Sudut Kanan Atas, Kiri Bawah, & Kanan Bawah Mirrored) -->
+    <div class="about-batik-motif-top" aria-hidden="true">
+      <img src="assets/images/batik-sulur-sweeping.png?v=11" alt="" class="about-batik-img" />
+    </div>
+    <div class="about-batik-motif-middle-left" aria-hidden="true">
+      <img src="assets/images/batik-padi-lineart-middle-left.png?v=5" alt="" class="about-batik-img" />
+    </div>
+    <div class="about-batik-motif-bottom-left" aria-hidden="true">
+      <img src="assets/images/batik-padi-corner-left.png?v=8" alt="" class="about-batik-img" />
+    </div>
+    <div class="about-batik-motif-bottom-right" aria-hidden="true">
+      <img src="assets/images/batik-padi-corner-right.png?v=8" alt="" class="about-batik-img" />
+    </div>
+
+    <div class="container">
+      
+      <!-- 1. Header & Pengantar Resmi -->
+      <div class="about-header-wrap">
+        <span class="section-tag">- Tentang Kami &bull; Profil Perusahaan -</span>
+        <h2 class="about-main-title">Teknologi Modern untuk Ketahanan Pangan Indonesia</h2>
+        <p class="about-intro-lead">
+          PT Pangan Masa Depan adalah perusahaan agribisnis pengolahan padi dan beras di Kandanghaur, Indramayu. Dari penerimaan padi hingga beras kemasan bermerk, seluruh tahap berjalan di fasilitas kami sendiri dengan kapasitas giling 300 ton padi per hari.
+        </p>
+      </div>
+
+      <!-- 2. 3 Indikator Utama (Floating Open Stats - Tanpa Kotak) -->
+      <div class="about-stats-open">
+        <div class="about-stat-col">
+          <div class="stat-big-num">300 Ton/Hari</div>
+          <div class="stat-sub-label">Kapasitas Giling</div>
+        </div>
+        <div class="stat-v-divider"></div>
+        <div class="about-stat-col">
+          <div class="stat-big-num">Sistem Terpadu</div>
+          <div class="stat-sub-label">Pengering &amp; Silo Modern</div>
+        </div>
+        <div class="stat-v-divider"></div>
+        <div class="about-stat-col">
+          <div class="stat-big-num">Indramayu</div>
+          <div class="stat-sub-label">Sentra Fasilitas Pabrik</div>
+        </div>
+      </div>
+
+      <div class="editorial-hairline"></div>
+
+      <!-- 3. Dua Kolom Editorial: 01 / Visi Kami & Fasilitas Sentral Aktif -->
+      <div class="about-duo-open">
+        <!-- Kolom Kiri: Visi Kami -->
+        <div class="vision-open-col">
+          <span class="editorial-step-tag">01 / VISI KAMI</span>
+          <blockquote class="editorial-quote">
+            "Memimpin transformasi industri beras Indonesia — dengan teknologi, bukan janji."
+          </blockquote>
+          <p class="editorial-text">
+            Kami percaya efisiensi dan keberlanjutan bukan pilihan, tapi syarat untuk tetap relevan di industri pangan. Setiap investasi teknologi kami arahkan ke situ.
+          </p>
+          <p class="editorial-text">
+            Sistem penggilingan kami berbasis data: setiap batch terukur, setiap tahap tercatat. Bukan sekadar mesin yang lebih modern, tapi proses yang bisa dipertanggungjawabkan dari awal sampai akhir.
+          </p>
+        </div>
+
+        <!-- Kolom Kanan: Fasilitas Sentral (Architectural Arch) -->
+        <div class="facility-open-wrap" id="story">
+          <h3 class="facility-open-title">Sentra Fasilitas Pengolahan Terpadu PMD</h3>
+          <p class="facility-open-sub">
+            Menara Pengering Vertikal &amp; Silo Penyimpanan Modern di Kandanghaur, Indramayu.
+          </p>
+          <div class="facility-arch-frame" style="height: 290px;">
+            <img src="assets/images/fasilitas-mesin.jpg" alt="Sentra Fasilitas Pengolahan Terpadu PMD Kandanghaur Indramayu" loading="lazy" />
+          </div>
+        </div>
+      </div>
+
+      <div class="editorial-hairline"></div>
+
+      <!-- 4. 02 / MISI KAMI (Open Lookbook Layout - Tanpa Kotak) -->
+      <div class="about-mission-open">
+        <div class="mission-open-header">
+          <span class="editorial-step-tag">02 / MISI KAMI</span>
+          <h3 class="about-main-title" style="font-size: clamp(1.85rem, 3.2vw, 2.5rem); margin-bottom: 0;">
+            Lima hal yang kami kerjakan untuk sampai ke sana
+          </h3>
+        </div>
+        <div class="mission-open-grid">
+          <div class="mission-open-col">
+            <div class="mission-open-num">01</div>
+            <p class="mission-open-desc">
+              Menaikkan nilai panen padi lewat pengolahan modern — bukan sekadar menggiling, tapi mengolah sampai nilai jualnya maksimal.
+            </p>
+          </div>
+          <div class="mission-open-col">
+            <div class="mission-open-num">02</div>
+            <p class="mission-open-desc">
+              Mendata setiap tahap produksi, dari gabah masuk sampai truk berangkat, supaya mutu bisa dibuktikan, bukan diklaim.
+            </p>
+          </div>
+          <div class="mission-open-col">
+            <div class="mission-open-num">03</div>
+            <p class="mission-open-desc">
+              Menghubungkan petani, mitra, dan pelanggan dalam satu rantai pasok yang terbuka — harga dan mutu yang sama-sama bisa diperiksa.
+            </p>
+          </div>
+          <div class="mission-open-col">
+            <div class="mission-open-num">04</div>
+            <p class="mission-open-desc">
+              Membangun tim yang bekerja cepat dan mau berubah, karena industri pangan tidak menunggu.
+            </p>
+          </div>
+          <div class="mission-open-col">
+            <div class="mission-open-num">05</div>
+            <p class="mission-open-desc">
+              Jadi acuan industri beras Indonesia — bukan hanya soal ukuran, tapi soal cara kerja yang bisa ditiru.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="editorial-hairline"></div>
+
+      <!-- 5. 03 / NILAI KAMI — TERDEPAN (Open Editorial Magazine Grid) -->
+      <div class="about-values-open">
+        <div class="values-open-header">
+          <span class="editorial-step-tag">03 / NILAI KAMI — TERDEPAN</span>
+          <h3 class="about-main-title" style="font-size: clamp(1.85rem, 3.2vw, 2.5rem);">
+            Delapan nilai yang menjadi ukuran cara kami bekerja:
+          </h3>
+        </div>
+
+        <div class="values-open-grid">
+          <!-- 1: T - Tanggung Jawab -->
+          <div class="value-open-item">
+            <div class="value-char-letter">T</div>
+            <h4 class="value-open-title">Tanggung Jawab</h4>
+            <p class="value-open-desc">
+              Setiap batch punya nomor, setiap keputusan punya nama. Kami bertanggung jawab atas hasil kerja kami, bukan cuma prosesnya.
+            </p>
+          </div>
+
+          <!-- 2: E - Efisiensi -->
+          <div class="value-open-item">
+            <div class="value-char-letter">E</div>
+            <h4 class="value-open-title">Efisiensi</h4>
+            <p class="value-open-desc">
+              Teknologi kami pakai untuk memangkas pemborosan — waktu, energi, dan biaya — bukan untuk gaya-gayaan.
+            </p>
+          </div>
+
+          <!-- 3: R - Reliabilitas -->
+          <div class="value-open-item">
+            <div class="value-char-letter">R</div>
+            <h4 class="value-open-title">Reliabilitas</h4>
+            <p class="value-open-desc">
+              Kiriman kesepuluh sama mutunya dengan yang pertama. Itu yang kami jaga, setiap saat.
+            </p>
+          </div>
+
+          <!-- 4: D - Dedikasi -->
+          <div class="value-open-item">
+            <div class="value-char-letter">D</div>
+            <h4 class="value-open-title">Dedikasi</h4>
+            <p class="value-open-desc">
+              Kami turun ke lantai produksi, bukan cuma mengawasi dari kantor. Hasil terbaik lahir dari kerja yang dilihat langsung.
+            </p>
+          </div>
+
+          <!-- 5: E - Ekselensi -->
+          <div class="value-open-item">
+            <div class="value-char-letter">E</div>
+            <h4 class="value-open-title">Ekselensi</h4>
+            <p class="value-open-desc">
+              Standar yang kami tetapkan sendiri lebih ketat dari yang diwajibkan. Itu levelnya, bukan target.
+            </p>
+          </div>
+
+          <!-- 6: P - Profesionalisme -->
+          <div class="value-open-item">
+            <div class="value-char-letter">P</div>
+            <h4 class="value-open-title">Profesionalisme</h4>
+            <p class="value-open-desc">
+              Setiap keputusan bisa dipertanggungjawabkan — ke atasan, ke mitra, ke diri sendiri.
+            </p>
+          </div>
+
+          <!-- 7: A - Adaptif -->
+          <div class="value-open-item">
+            <div class="value-char-letter">A</div>
+            <h4 class="value-open-title">Adaptif</h4>
+            <p class="value-open-desc">
+              Pasar berubah, kebutuhan pelanggan berubah — kami menyesuaikan lebih cepat dari itu, bukan mengejar dari belakang.
+            </p>
+          </div>
+
+          <!-- 8: N - Nasionalisme -->
+          <div class="value-open-item">
+            <div class="value-char-letter">N</div>
+            <h4 class="value-open-title">Nasionalisme</h4>
+            <p class="value-open-desc">
+              Setiap padi yang kami olah adalah hasil kerja petani Indonesia. Memperkuat mereka berarti memperkuat ketahanan pangan negeri ini.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- /about-editorial-wrap -->
+
+    <!-- Hairline Pemisah Elegan antara 03 Terdepan dan 04 Alur Proses -->
+    <div class="editorial-hairline" style="margin: 0 auto; max-width: 1200px;"></div>
+
+    <!-- ========================================================================
+         6. 04. PROCESS BAND — ALUR PRODUKSI DARI GABAH KE BERAS KEMASAN
+         ======================================================================== -->
+    <section class="process-band" id="process-band">
+      <div class="container-fluid">
+        <div class="process-head">
+          <span class="editorial-step-tag" id="pb-index">04 / ALUR PROSES PRODUKSI</span>
+          <h3 class="about-main-title" style="font-size: clamp(1.85rem, 3.2vw, 2.5rem); margin-bottom: 0;" id="pb-title">
+            Dari Gabah ke Beras Kemasan
+          </h3>
+          <p class="process-note" id="pb-note">
+            Alur kerja terintegrasi 8 stasiun pengolahan modern di fasilitas PMD Kandanghaur — setiap batch terukur, tercatat, dan dapat ditelusuri dari gabah basah hingga beras kemasan bermerk.
+          </p>
+        </div>
+
+        <div class="rail" id="pb-rail">
+          <!-- diisi otomatis oleh script di bawah, dari array PROCESS_DATA -->
+        </div>
+
+        <div id="process-detail" class="process-detail" hidden>
+          <div class="process-detail-inner" id="pb-detail-inner"></div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- ========================================================================
+       KATALOG 9 PRODUK PT PANGAN MASA DEPAN (CAROUSEL ALA JATILUWIH ORGANIK)
+       ======================================================================== -->
+  <section class="products-section" id="products">
+    <div class="container-fluid" style="max-width: 1440px; margin: 0 auto; padding: 0 24px; position: relative;">
+      <div class="text-center" style="margin-bottom: 20px;">
+        <span class="section-tag">- Kategori Produk -</span>
+        <h2 class="section-title" style="letter-spacing: 0.04em; margin-bottom: 10px;">PRODUK</h2>
+        <p class="section-subtitle" style="margin-bottom: 0;">
+          10 ragam produk beras bermutu tinggi dari fasilitas penggilingan presisi PT Pangan Masa Depan.
+        </p>
+      </div>
+
+      <!-- Horizontal Carousel ala Jatiluwih Organik -->
+      <div class="product-carousel-wrapper">
+        <button class="carousel-arrow prev-arrow" id="carouselPrev" aria-label="Produk Sebelumnya">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+
+        <div class="product-carousel-track" id="productCarouselTrack">
+          <!-- Diinjeksi otomatis via js/app.js dengan 9 gambar kemasan pouch realistis -->
+        </div>
+
+        <button class="carousel-arrow next-arrow" id="carouselNext" aria-label="Produk Berikutnya">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+
+      <!-- Titik Indikator Pagination Carousel -->
+      <div class="carousel-dots" id="carouselDots"></div>
+
+      <!-- Tombol Menuju Katalog Lengkap Row-by-Row -->
+      <div class="text-center" style="margin-top: 36px;">
+        <a href="products.html" class="btn btn-primary" style="padding: 14px 38px; font-size: 0.96rem;">
+          <i class="fas fa-th-list"></i> Buka Katalog
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="editorial-hairline" style="margin: 0 auto; max-width: 1100px;"></div>
+
+  <!-- ========================================================================
+       PRODUK SAMPINGAN PENGGILINGAN (NON-RECTANGULAR CLEAN DESIGN)
+       ======================================================================== -->
+  <section class="byproducts-section" id="byproducts">
+    <!-- Ornamen Seni Batik Sulur Padi Sisi Kiri Bawah & Kanan Atas Produk Sampingan -->
+    <div class="byproducts-batik-motif-left" aria-hidden="true">
+      <img src="assets/images/batik-padi-struktur-kiri.png?v=2" alt="" class="byproducts-batik-img" />
+    </div>
+    <div class="byproducts-batik-motif-right" aria-hidden="true">
+      <img src="assets/images/batik-padi-struktur-baru.png?v=8" alt="" class="byproducts-batik-img" />
+    </div>
+    <div id="articles" style="position: absolute; top: -80px;"></div>
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag">- Produk Sampingan -</span>
+        <h2 class="section-title">Hasil Samping Pengolahan & Penggilingan</h2>
+        <p class="section-subtitle">
+          Pemanfaatan bernilai tinggi dari seluruh proses penggilingan padi modern di Indramayu untuk kebutuhan industri pangan, pakan ternak, dan agribisnis.
+        </p>
+      </div>
+
+      <div class="byproducts-grid">
+        <!-- Item 1: Beras Broken -->
+        <div class="byproduct-item" data-byproduct-id="bp-1">
+          <div class="byproduct-img-wrap">
+            <img src="assets/images/produk-beras-patah.jpg" alt="Beras Broken Berkualitas" loading="lazy" />
+          </div>
+          <div class="byproduct-info">
+            <span class="byproduct-tag">Industri Pangan</span>
+            <h3 class="byproduct-title">Beras Broken</h3>
+            <p class="byproduct-desc">
+              Patahan butir beras bersih hasil sortasi, sangat cocok sebagai bahan baku bihun, bubur, tepung beras, dan aneka olahan industri makanan.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 2: Menir Beras -->
+        <div class="byproduct-item" data-byproduct-id="bp-2">
+          <div class="byproduct-img-wrap">
+            <img src="assets/images/produk-menir.jpg" alt="Menir Beras Halus (Rice Grits)" loading="lazy" />
+          </div>
+          <div class="byproduct-info">
+            <span class="byproduct-tag">Pakan & Olahan</span>
+            <h3 class="byproduct-title">Menir Beras</h3>
+            <p class="byproduct-desc">
+              Pecahan butir beras kecil berkualitas tinggi, menjadi bahan baku pakan ternak bernutrisi, olahan pakan unggas, dan fermentasi industri pangan.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 3: Reject (Color Sorter) -->
+        <div class="byproduct-item" data-byproduct-id="bp-3">
+          <div class="byproduct-img-wrap">
+            <img src="assets/images/produk-offgrade.jpg" alt="Beras Reject Sortir Warna" loading="lazy" />
+          </div>
+          <div class="byproduct-info">
+            <span class="byproduct-tag">Sortasi Mesin</span>
+            <h3 class="byproduct-title">Reject</h3>
+            <p class="byproduct-desc">
+              Hasil pemisahan mesin <em>optical color sorter</em> berteknologi tinggi untuk memisahkan bulir kapur atau bintik warna, menjaga kemurnian mutu beras utama.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 4: Pelet Sekam -->
+        <div class="byproduct-item" data-byproduct-id="bp-4">
+          <div class="byproduct-img-wrap">
+            <img src="assets/images/produk-pelet-sekam.jpg?v=20260918_pelet" alt="Pelet Sekam Biomassa Berkualitas" loading="lazy" />
+          </div>
+          <div class="byproduct-info">
+            <span class="byproduct-tag">Biomassa &amp; Energi</span>
+            <h3 class="byproduct-title">Pelet Sekam</h3>
+            <p class="byproduct-desc">
+              Sekam padi murni yang dipadatkan menjadi pelet biomassa ramah lingkungan bernilai kalor tinggi untuk bahan bakar boiler industri dan pembangkit energi.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 5: Bekatul -->
+        <div class="byproduct-item" data-byproduct-id="bp-5">
+          <div class="byproduct-img-wrap">
+            <img src="assets/images/produk-bekatul.jpg?v=20260918_bekatul" alt="Bekatul Halus Berkualitas" loading="lazy" />
+          </div>
+          <div class="byproduct-info">
+            <span class="byproduct-tag">Nutrisi Ternak</span>
+            <h3 class="byproduct-title">Bekatul</h3>
+            <p class="byproduct-desc">
+              Lapisan kulit ari kaya serat pangan, protein, dan vitamin B kompleks untuk kebutuhan pakan konsentrat ternak dan budidaya perikanan.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tombol Menuju Katalog Lengkap Produk Sampingan -->
+      <div class="text-center" style="margin-top: 40px;">
+        <a href="products.html#produk-sampingan" class="btn btn-primary" style="padding: 14px 38px; font-size: 0.96rem;">
+          Jelajahi Produk Sampingan <i class="fas fa-arrow-right" style="margin-left: 8px;"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="editorial-hairline" style="margin: 0 auto; max-width: 1100px;"></div>
+
+  <!-- ========================================================================
+       KLIEN & MITRA (Clean Borderless Ticker ala Screenshot)
+       ======================================================================== -->
+  <section class="partners-marquee-section" id="partners">
+    <div class="container">
+      <div class="about-partners-header text-center">
+        <span class="editorial-step-tag">KLIEN &amp; MITRA</span>
+        <h3 class="about-main-title" style="font-size: clamp(1.85rem, 3.2vw, 2.5rem); margin-bottom: 0;">
+          Produk kami memasok industri nasional, cadangan pangan, dan pasar utama
+        </h3>
+      </div>
+
+      <div class="partners-marquee-container" id="partnersMarqueeContainer">
+        <div class="partners-marquee-track">
+          <!-- Group 1: 8 Klien & Mitra Resmi -->
+          <div class="partners-slide-group">
+            
+            <!-- 1: Mayora -->
+            <div class="client-ticker-item">
+              <div class="client-ticker-logo-wrap">
+                <img src="assets/images/mitra/mayora.png" alt="Logo PT Mayora Indah Tbk" class="client-ticker-logo" style="height: 20px; width: auto; max-width: 90px;" loading="lazy" />
+              </div>
+              <div class="client-ticker-text">
+                <span class="client-ticker-name">PT Mayora Indah Tbk</span>
+                <span class="client-ticker-sector">Industri FMCG &amp; Pangan Olahan</span>
+              </div>
+              <span class="client-ticker-sep" aria-hidden="true">✦</span>
+            </div>
+
+            <!-- 2: Food Station -->
+            <div class="client-ticker-item">
+              <div class="client-ticker-logo-wrap">
+                <img src="assets/images/mitra/food-station.png" alt="Logo PT Food Station Tjipinang Jaya" class="client-ticker-logo" style="height: 26px; width: auto; max-width: 90px;" loading="lazy" />
+              </div>
+              <div class="client-ticker-text">
+                <span class="client-ticker-name">PT Food Station Tjipinang Jaya</span>
+                <span class="client-ticker-sector">BUMD Pangan DKI Jakarta</span>
+              </div>
+              <span class="client-ticker-sep" aria-hidden="true">✦</span>
+            </div>
+
+            <!-- 3: Bulog -->
+            <div class="client-ticker-item">
+              <div class="client-ticker-logo-wrap">
+                <img src="assets/images/mitra/bulog.png" alt="Logo Perum BULOG" class="client-ticker-logo" style="height: 22px; width: auto; max-width: 90px;" loading="lazy" />
+              </div>
+              <div class="client-ticker-text">
+                <span class="client-ticker-name">Perum BULOG</span>
+                <span class="client-ticker-sector">BUMN Logistik Pangan</span>
+              </div>
+              <span class="client-ticker-sep" aria-hidden="true">✦</span>
+            </div>
+
+            <!-- 4: Charoen Pokphand -->
+            <div class="client-ticker-item">
+              <div class="client-ticker-logo-wrap">
+                <img src="assets/images/mitra/charoen-pokphand.png" alt="Logo PT Charoen Pokphand Indonesia" class="client-ticker-logo" style="height: 26px; width: auto; max-width: 90px;" loading="lazy" />
+              </div>
+              <div class="client-ticker-text">
+                <span class="client-ticker-name">PT Charoen Pokphand Indonesia</span>
+                <span class="client-ticker-sector">Agribisnis Multinasional</span>
+              </div>
+              <span class="client-ticker-sep" aria-hidden="true">✦</span>
+            </div>
+
+            <!-- 5: Badan Gizi Nasional -->
+            <div class="client-ticker-item">
+              <div class="client-ticker-logo-wrap">
+                <img src="assets/images/mitra/badan-gizi-nasional.png" alt="Logo Badan Gizi Nasional RI" class="client-ticker-logo" style="height: 26px; width: auto; max-width: 90px;" loading="lazy" />
+              </div>
+              <div class="client-ticker-text">
+                <span class="client-ticker-name">Badan Gizi Nasional RI</span>
+                <span class="client-ticker-sector">Lembaga Pangan &amp; Gizi</span>
+              </div>
+              <span class="client-ticker-sep" aria-hidden="true">✦</span>
+            </div>
+
+            <!-- 6: Pasar Induk Cipinang (Text Only) -->
+            <div class="client-ticker-item client-ticker-item-textonly">
+              <div class="client-ticker-text">
+                <span class="client-ticker-name">Pasar Induk Beras Cipinang</span>
+                <span class="client-ticker-sector">Pasar Beras Grosir Utama</span>
+              </div>
+              <span class="client-ticker-sep" aria-hidden="true">✦</span>
+            </div>
+
+            <!-- 7: RM Taman Selera (Text Only) -->
+            <div class="client-ticker-item client-ticker-item-textonly">
+              <div class="client-ticker-text">
+                <span class="client-ticker-name">RM Taman Selera</span>
+                <span class="client-ticker-sector">Jaringan Kuliner Nasional</span>
+              </div>
+              <span class="client-ticker-sep" aria-hidden="true">✦</span>
+            </div>
+
+            <!-- 8: PT East Bogor (Text Only) -->
+            <div class="client-ticker-item client-ticker-item-textonly">
+              <div class="client-ticker-text">
+                <span class="client-ticker-name">PT East Bogor</span>
+                <span class="client-ticker-sector">Mitra Distribusi Regional</span>
+              </div>
+              <span class="client-ticker-sep" aria-hidden="true">✦</span>
+            </div>
+
+          </div>
+
+          <!-- Group 2: Duplikasi 8 Klien & Mitra untuk Seamless Infinite Loop -->
+          <div class="partners-slide-group" aria-hidden="true">
+            
+            <!-- 1: Mayora -->
+            <div class="client-ticker-item">
+              <div class="client-ticker-logo-wrap">
+                <img src="assets/images/mitra/mayora.png" alt="Logo PT Mayora Indah Tbk" class="client-ticker-logo" style="height: 20px; width: auto; max-width: 90px;" loading="lazy" />
+              </div>
+              <div class="client-ticker-text">
+                <span class="client-ticker-name">PT Mayora Indah Tbk</span>
+                <span class="client-ticker-sector">Industri FMCG &amp; Pangan Olahan</span>
+              </div>
+              <span class="client-ticker-sep" aria-hidden="true">✦</span>
+            </div>
+
+            <!-- 2: Food Station -->
+            <div class="client-ticker-item">
+              <div class="client-ticker-logo-wrap">
+                <img src="assets/images/mitra/food-station.png" alt="Logo PT Food Station Tjipinang Jaya" class="client-ticker-logo" style="height: 26px; width: auto; max-width: 90px;" loading="lazy" />
+              </div>
+              <div class="client-ticker-text">
+                <span class="client-ticker-name">PT Food Station Tjipinang Jaya</span>
+                <span class="client-ticker-sector">BUMD Pangan DKI Jakarta</span>
+              </div>
+              <span class="client-ticker-sep" aria-hidden="true">✦</span>
+            </div>
+
+            <!-- 3: Bulog -->
+            <div class="client-ticker-item">
+              <div class="client-ticker-logo-wrap">
+                <img src="assets/images/mitra/bulog.png" alt="Logo Perum BULOG" class="client-ticker-logo" style="height: 22px; width: auto; max-width: 90px;" loading="lazy" />
+              </div>
+              <div class="client-ticker-text">
+                <span class="client-ticker-name">Perum BULOG</span>
+                <span class="client-ticker-sector">BUMN Logistik Pangan</span>
+              </div>
+              <span class="client-ticker-sep" aria-hidden="true">✦</span>
+            </div>
+
+            <!-- 4: Charoen Pokphand -->
+            <div class="client-ticker-item">
+              <div class="client-ticker-logo-wrap">
+                <img src="assets/images/mitra/charoen-pokphand.png" alt="Logo PT Charoen Pokphand Indonesia" class="client-ticker-logo" style="height: 26px; width: auto; max-width: 90px;" loading="lazy" />
+              </div>
+              <div class="client-ticker-text">
+                <span class="client-ticker-name">PT Charoen Pokphand Indonesia</span>
+                <span class="client-ticker-sector">Agribisnis Multinasional</span>
+              </div>
+              <span class="client-ticker-sep" aria-hidden="true">✦</span>
+            </div>
+
+            <!-- 5: Badan Gizi Nasional -->
+            <div class="client-ticker-item">
+              <div class="client-ticker-logo-wrap">
+                <img src="assets/images/mitra/badan-gizi-nasional.png" alt="Logo Badan Gizi Nasional RI" class="client-ticker-logo" style="height: 26px; width: auto; max-width: 90px;" loading="lazy" />
+              </div>
+              <div class="client-ticker-text">
+                <span class="client-ticker-name">Badan Gizi Nasional RI</span>
+                <span class="client-ticker-sector">Lembaga Pangan &amp; Gizi</span>
+              </div>
+              <span class="client-ticker-sep" aria-hidden="true">✦</span>
+            </div>
+
+            <!-- 6: Pasar Induk Cipinang (Text Only) -->
+            <div class="client-ticker-item client-ticker-item-textonly">
+              <div class="client-ticker-text">
+                <span class="client-ticker-name">Pasar Induk Beras Cipinang</span>
+                <span class="client-ticker-sector">Pasar Beras Grosir Utama</span>
+              </div>
+              <span class="client-ticker-sep" aria-hidden="true">✦</span>
+            </div>
+
+            <!-- 7: RM Taman Selera (Text Only) -->
+            <div class="client-ticker-item client-ticker-item-textonly">
+              <div class="client-ticker-text">
+                <span class="client-ticker-name">RM Taman Selera</span>
+                <span class="client-ticker-sector">Jaringan Kuliner Nasional</span>
+              </div>
+              <span class="client-ticker-sep" aria-hidden="true">✦</span>
+            </div>
+
+            <!-- 8: PT East Bogor (Text Only) -->
+            <div class="client-ticker-item client-ticker-item-textonly">
+              <div class="client-ticker-text">
+                <span class="client-ticker-name">PT East Bogor</span>
+                <span class="client-ticker-sector">Mitra Distribusi Regional</span>
+              </div>
+              <span class="client-ticker-sep" aria-hidden="true">✦</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       HUBUNGI KAMI & FORMULIR (BAHASA INDONESIA)
+       ======================================================================== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="text-center" style="margin-bottom: 50px;">
+        <span class="section-tag">- Hubungi Kami -</span>
+        <h2 class="section-title">Terhubung Bersama Kami</h2>
+        <p class="section-subtitle">
+          Punya pertanyaan seputar ragam produk beras, produk sampingan, atau kerjasama pasokan B2B & industri? Hubungi kami sekarang.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Informasi Kontak -->
+        <div class="contact-info-card">
+          <h3>Kantor & Layanan Pelanggan</h3>
+          <p>
+            Tim layanan pelanggan kami siap membantu Anda setiap hari kerja untuk pertanyaan seputar produk maupun pemesanan skala besar.
+          </p>
+
+          <div class="info-items-list">
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+              <div class="info-details">
+                <h5>Telepon & WhatsApp</h5>
+                <a href="https://wa.me/6281138800034" target="_blank" rel="noopener">+62 811-3880-0034</a>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-envelope"></i></div>
+              <div class="info-details">
+                <h5>Email Resmi</h5>
+                <a href="mailto:info@panganmasadepan.com">info@panganmasadepan.com</a>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="info-details">
+                <h5>Kantor Pusat</h5>
+                <span>Jalan Rancahan, Blok Sukamelang RT 08/04<br>Karangmulya, Kec. Kandanghaur<br>Kabupaten Indramayu, Jawa Barat 45254</span>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-clock"></i></div>
+              <div class="info-details">
+                <h5>Jam Operasional</h5>
+                <span>Senin – Sabtu: 08:00 – 17:00 WIB</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulir Pesan -->
+        <div class="contact-form-card">
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contactName">Nama Lengkap *</label>
+                <input type="text" id="contactName" class="form-control" placeholder="Contoh: Budi Santoso" required />
+              </div>
+              <div class="form-group">
+                <label for="contactEmail">Alamat Email *</label>
+                <input type="email" id="contactEmail" class="form-control" placeholder="nama@email.com" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contactPhone">Nomor WhatsApp / HP</label>
+                <input type="tel" id="contactPhone" class="form-control" placeholder="0811xxxxxxxx" />
+              </div>
+              <div class="form-group">
+                <label for="contactSubject">Topik Pertanyaan</label>
+                <select id="contactSubject" class="form-control">
+                  <option value="produk">Informasi 9 Ragam Produk Beras</option>
+                  <option value="sampingan">Pemesanan Produk Sampingan</option>
+                  <option value="kerjasama">Kerjasama Pasokan B2B & Industri</option>
+                  <option value="lainnya">Lainnya</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contactMessage">Pesan atau Pertanyaan Anda *</label>
+              <textarea id="contactMessage" class="form-control" rows="4" placeholder="Tuliskan detail pertanyaan atau pesanan yang Anda butuhkan..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; padding: 14px;">
+              <i class="fas fa-paper-plane"></i> Kirim Pesan Sekarang
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       AJAKAN GAYA HIDUP SEHAT & NAWALA (BAHASA INDONESIA)
+       ======================================================================== -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-box">
+        <h2 class="cta-title">Siap beralih ke beras organik yang lebih sehat?</h2>
+        <p class="cta-desc">
+          Daftarkan email Anda untuk menerima informasi diskon eksklusif, resep kuliner sehat nusantara, dan artikel panduan nutrisi langsung di kotak masuk Anda.
+        </p>
+
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" class="newsletter-input" placeholder="Masukkan alamat email Anda..." required />
+          <button type="submit" class="btn btn-primary">
+            Langganan
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FOOTER (BAHASA INDONESIA)
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Info Brand -->
+        <div class="footer-brand">
+          <img src="assets/images/logo-pmd-light.png?v=2" alt="PT Pangan Masa Depan (PMD)" class="footer-logo" />
+          <p>
+            Industri pengolahan pangan modern dan fasilitas penggilingan presisi di Kandanghaur, Indramayu. Menghadirkan ragam produk beras dan ketan berkualitas tinggi dengan standar mutu terpercaya.
+          </p>
+          <div class="social-links">
+            <a href="https://wa.me/6281138800034" target="_blank" rel="noopener" class="social-btn" aria-label="WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="mailto:info@panganmasadepan.com" class="social-btn" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Menu Cepat -->
+        <div class="footer-col">
+          <h4>Tautan Cepat</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">Beranda</a></li>
+            <li><a href="#about">Tentang Kami</a></li>
+            <li><a href="products.html">Produk</a></li>
+            <li><a href="products.html#produk-sampingan">Produk Sampingan</a></li>
+            <li><a href="career.html">Karir</a></li>
+            <li><a href="#contact">Hubungi Kami</a></li>
+          </ul>
+        </div>
+
+        <!-- Kontak & Kantor Pusat -->
+        <div class="footer-col">
+          <h4>Kantor Pusat & Kontak</h4>
+          <ul class="footer-links">
+            <li><i class="fas fa-map-marker-alt" style="margin-right: 8px; color: var(--color-warm-amber);"></i> Jalan Rancahan, Blok Sukamelang RT 08/04, Karangmulya, Kec. Kandanghaur, Kabupaten Indramayu, Jawa Barat 45254</li>
+            <li><i class="fas fa-phone-alt" style="margin-right: 8px; color: var(--color-warm-amber);"></i> +62 811-3880-0034</li>
+            <li><i class="fas fa-envelope" style="margin-right: 8px; color: var(--color-warm-amber);"></i> info@panganmasadepan.com</li>
+            <li><i class="fas fa-clock" style="margin-right: 8px; color: var(--color-warm-amber);"></i> 08.00 - 17.00 WIB</li>
+          </ul>
+        </div>
+
+        <!-- Peta Google Maps (Paling Kanan & Ukuran Lebih Besar) -->
+        <div class="footer-col footer-map-col">
+          <div class="footer-map-wrapper">
+            <iframe 
+              src="https://maps.google.com/maps?q=PT%20Pangan%20Masa%20Depan,%20Jalan%20Rancahan,%20Karangmulya,%20Kandanghaur,%20Kabupaten%20Indramayu,%20Jawa%20Barat&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=&amp;output=embed" 
+              width="100%" 
+              height="220" 
+              style="border:0; border-radius: 12px; display: block;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Peta Lokasi Pabrik PT Pangan Masa Depan">
+            </iframe>
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=PT+Pangan+Masa+Depan+Kandanghaur+Indramayu" target="_blank" rel="noopener noreferrer" class="footer-map-link">
+              <i class="fas fa-map-marked-alt"></i>
+              <span>Buka di Google Maps</span>
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bagian Bawah Footer -->
+      <div class="footer-bottom">
+        <div>
+          © 2026 <strong>PT Pangan Masa Depan</strong>. Hak Cipta Dilindungi Undang-Undang.
+        </div>
+        <div>
+          Kandanghaur, Indramayu • Fasilitas Pengolahan Beras Presisi
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       MODAL POPUP DETAIL (QUICK VIEW & BACA ARTIKEL)
+       ======================================================================== -->
+  <div class="modal-backdrop" id="appModal">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="modalClose" aria-label="Tutup Dialog">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="modal-body" id="modalDynamicContent">
+        <!-- Diinjeksi via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Tombol WhatsApp Mengambang -->
+  <a href="https://wa.me/6281138800034?text=Halo%20PT%20Pangan%20Masa%20Depan,%20saya%20tertarik%20dengan%20produk%20beras%20dan%20kerjasama%20pasokan." target="_blank" rel="noopener noreferrer" class="floating-wa-btn" aria-label="Hubungi WhatsApp Customer Service">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Skrip JavaScript Utama -->
+  <script src="js/app.js?v=20260918_v23"></script>
+</body>
+</html>
